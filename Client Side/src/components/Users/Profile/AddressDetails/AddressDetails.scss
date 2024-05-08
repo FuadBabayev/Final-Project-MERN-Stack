@@ -1,0 +1,254 @@
+.addressDetails {
+    display: flex;
+    align-items: center;
+    height: 450px;
+    background-color: #fff;
+
+    .addressDetails_partA {
+        width: 50%;
+        height: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .addressDetails_partB {
+        width: 50%;
+        // margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .heading {
+            padding-bottom: 30px;
+
+            h2 {
+                font-size: 30px;
+                font-weight: 700;
+            }
+        }
+
+        .shipping_table {
+            width: 70%;
+
+            ul {
+                list-style: none;
+
+                li {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-bottom: -5px;
+
+                    h3 {
+                        font-size: 24px;
+                        font-weight: 700;
+                    }
+
+                    p {
+                        font-size: 20px;
+                        font-style: italic;
+                        font-weight: 500;
+                    }
+                }
+            }
+
+        }
+    }
+
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1280px) {
+    .addressDetails {
+
+        .addressDetails_partB {
+
+            .heading {
+                padding-bottom: 25px;
+
+                h2 {
+                    font-size: 25px;
+                }
+            }
+
+            .shipping_table {
+                width: 80%;
+
+                ul {
+
+                    li {
+
+                        h3 {
+                            font-size: 21px;
+                            font-weight: 700;
+                        }
+
+                        p {
+                            font-size: 17px;
+                        }
+                    }
+                }
+
+            }
+        }
+
+    }
+
+}
+
+@media only screen and (min-width: 769px) and (max-width:992px) {
+    .addressDetails {
+
+        .addressDetails_partB {
+
+            .heading {
+                padding-bottom: 20px;
+
+                h2 {
+                    font-size: 25px;
+                    font-weight: 600;
+                }
+            }
+
+            .shipping_table {
+                width: 85%;
+
+                ul {
+
+                    li {
+
+                        h3 {
+                            font-size: 20px;
+                            font-weight: 500;
+                        }
+
+                        p {
+                            font-size: 18px;
+                            font-weight: 400;
+                        }
+                    }
+                }
+
+            }
+        }
+
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width:768px) {
+    .addressDetails {
+        position: relative;
+
+
+        .addressDetails_partA {
+            width: 100%;
+            height: 100%;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .addressDetails_partB {
+            position: absolute;
+            background-color: rgba(40, 40, 40, 0.7);
+            width: 100%;
+
+            .heading {
+                padding-bottom: 30px;
+
+                h2 {
+                    font-size: 30px;
+                    font-weight: 700;
+                    color: #fff;
+                }
+            }
+
+            .shipping_table {
+                width: 75%;
+
+                ul {
+
+                    li {
+                        margin-bottom: -5px;
+
+                        h3 {
+                            font-size: 20px;
+                            font-weight: 700;
+                            color: #fff;
+                        }
+
+                        p {
+                            font-size: 18px;
+                            font-weight: 400;
+                            color: #fff;
+                        }
+                    }
+                }
+
+            }
+        }
+
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .addressDetails {
+        position: relative;
+
+        .addressDetails_partA {
+            width: 100%;
+            height: 100%;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .addressDetails_partB {
+            position: absolute;
+            background-color: rgba(40, 40, 40, 0.7);
+            width: 100%;
+
+            .heading {
+                padding-bottom: 30px;
+
+                h2 {
+                    font-size: 22px;
+                    font-weight: 700;
+                    color: #fff;
+                }
+            }
+
+            .shipping_table {
+                width: 80%;
+
+                ul {
+
+                    li {
+                        margin-bottom: -5px;
+
+                        h3 {
+                            font-size: 18px;
+                            font-weight: 600;
+                            color: #fff;
+                        }
+
+                        p {
+                            font-size: 16px;
+                            font-weight: 400;
+                            color: #fff;
+                        }
+                    }
+                }
+
+            }
+        }
+
+    }
+}

@@ -1,0 +1,13 @@
+@base_url = http://localhost:2030/api/v1
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MWVjMWUyZDExNDYyMzVmOWQzM2ExNSIsImlhdCI6MTcxMzU1MzM5MiwiZXhwIjoxNzEzODEyNTkyfQ.jVexhpgGP-VqsRXNEgdUtS7ZiljWPOOWOEcsGVs_8Ao
+
+
+### Create New Review
+POST {{base_url}}/reviews/6620eadf10c26bd96eaf2bae
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "message": "It was Amazing to use",
+    "rating": 4.5
+}

@@ -1,0 +1,207 @@
+.thanksForOrdering {
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 200px);
+}
+.thanksForOrdering .thanksForOrdering_partA {
+  width: 50%;
+  height: 100%;
+}
+.thanksForOrdering .thanksForOrdering_partA img {
+  width: 100%;
+  height: 100%;
+}
+.thanksForOrdering .thanksForOrdering_partB {
+  width: 50%;
+  padding: 0 80px;
+}
+.thanksForOrdering .thanksForOrdering_partB h4 {
+  color: #512da8;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: -15px;
+}
+.thanksForOrdering .thanksForOrdering_partB h2 {
+  color: #282828;
+  font-size: 46px;
+  font-weight: 700;
+}
+.thanksForOrdering .thanksForOrdering_partB h3 {
+  color: #282828;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 19px;
+}
+.thanksForOrdering .thanksForOrdering_partB a {
+  background-color: #fff;
+  width: 180px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 10px;
+  color: #512da8;
+  border: 1px solid #512da8;
+}
+.thanksForOrdering .thanksForOrdering_partB .link {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1280px) {
+  .thanksForOrdering .thanksForOrdering_partB {
+    padding: 0 40px;
+  }
+  .thanksForOrdering .thanksForOrdering_partB h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: -15px;
+  }
+  .thanksForOrdering .thanksForOrdering_partB h2 {
+    font-size: 40px;
+    font-weight: 700;
+  }
+  .thanksForOrdering .thanksForOrdering_partB h3 {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+  .thanksForOrdering .thanksForOrdering_partB a {
+    width: 170px;
+    height: 40px;
+    font-size: 15px;
+  }
+  .thanksForOrdering .thanksForOrdering_partB .link {
+    margin-top: 20px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .thanksForOrdering .thanksForOrdering_partB {
+    width: 50%;
+    padding: 0 20px;
+  }
+  .thanksForOrdering .thanksForOrdering_partB h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: -15px;
+  }
+  .thanksForOrdering .thanksForOrdering_partB h2 {
+    font-size: 34px;
+    font-weight: 700;
+  }
+  .thanksForOrdering .thanksForOrdering_partB h3 {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+  .thanksForOrdering .thanksForOrdering_partB a {
+    width: 150px;
+    height: 30px;
+    font-size: 13px;
+  }
+  .thanksForOrdering .thanksForOrdering_partB .link {
+    margin-top: 20px;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .thanksForOrdering {
+    position: relative;
+  }
+  .thanksForOrdering .thanksForOrdering_partA {
+    width: 100%;
+    height: 100%;
+  }
+  .thanksForOrdering .thanksForOrdering_partA img {
+    width: 100%;
+    height: 100%;
+  }
+  .thanksForOrdering .thanksForOrdering_partB {
+    position: absolute;
+    background-color: rgba(40, 40, 40, 0.7);
+    width: 100%;
+    padding: 0 60px;
+  }
+  .thanksForOrdering .thanksForOrdering_partB h4 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: -1px;
+  }
+  .thanksForOrdering .thanksForOrdering_partB h2 {
+    color: #fff;
+    font-size: 44px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  .thanksForOrdering .thanksForOrdering_partB h3 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 17px;
+  }
+  .thanksForOrdering .thanksForOrdering_partB a {
+    width: 160px;
+    height: 30px;
+    font-size: 14px;
+    border-radius: 7px;
+    color: #282828;
+    border: 1px solid #282828;
+  }
+  .thanksForOrdering .thanksForOrdering_partB .link {
+    margin-top: 50px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .thanksForOrdering {
+    position: relative;
+  }
+  .thanksForOrdering .thanksForOrdering_partA {
+    width: 100%;
+    height: 100%;
+  }
+  .thanksForOrdering .thanksForOrdering_partA img {
+    width: 100%;
+    height: 100%;
+  }
+  .thanksForOrdering .thanksForOrdering_partB {
+    position: absolute;
+    background-color: rgba(40, 40, 40, 0.7);
+    width: 100%;
+    padding: 0 30px;
+  }
+  .thanksForOrdering .thanksForOrdering_partB h4 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: -1px;
+    margin-top: 10px;
+  }
+  .thanksForOrdering .thanksForOrdering_partB h2 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 35px;
+    margin-bottom: 25px;
+  }
+  .thanksForOrdering .thanksForOrdering_partB h3 {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 15px;
+  }
+  .thanksForOrdering .thanksForOrdering_partB a {
+    width: 120px;
+    height: 30px;
+    font-size: 11px;
+    border-radius: 5px;
+    color: #282828;
+    border: 1px solid #282828;
+  }
+  .thanksForOrdering .thanksForOrdering_partB .link {
+    margin-top: 30px;
+  }
+}

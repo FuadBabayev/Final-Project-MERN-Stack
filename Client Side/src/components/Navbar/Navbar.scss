@@ -1,0 +1,764 @@
+nav {
+    background-color: #fff;
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        padding: 8px 0;
+
+        .logo {
+            width: 30%;
+        }
+
+        .routes {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 70%;
+
+            ul {
+                list-style: none;
+                display: flex;
+
+                &.links {
+                    align-items: center;
+                    gap: 40px;
+
+                    li {
+                        position: relative;
+                        .page_item{
+                            position: absolute;
+                            background-color: #ffff;
+                            top: 70px;
+                            left: -50px;
+                            padding: 10px 30px;
+                            transition: 0.2s;
+                            display: flex;
+                            gap: 10px;
+                            z-index: 3;
+                            border-radius: 5px;
+                            opacity: 0;
+                            visibility: hidden;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: flex-start;
+                            p{
+                                width: 150px;
+                                font: 500 18px "Poppins";
+                                cursor: pointer;
+                            }
+
+                        }
+                        .shop_item{
+                            position: absolute;
+                            background-color: #ffff;
+                            top: 70px;
+                            left: -300px;
+                            padding: 10px 50px;
+                            transition: 0.3s;
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                            z-index: 3;
+                            border-radius: 5px;
+                            opacity: 0;
+                            visibility: hidden;
+
+                            .products{
+                                width: 300px;
+                                h2{
+                                    font: 600 20px "Poppins";
+                                    margin-bottom: 15px;
+                                }
+                                p{
+                                    font: 400 15px "Poppins";
+                                    margin-bottom: 1px;
+                                    cursor: pointer;
+                                }
+                            }
+                            .image{
+                                width: 200px;
+                                img{
+                                    width: 100%;
+                                }
+                            }
+                        }
+                        .category_item{
+                            position: absolute;
+                            background-color: #ffff;
+                            top: 70px;
+                            left: -50px;
+                            padding: 10px 30px;
+                            transition: 0.2s;
+                            display: flex;
+                            gap: 10px;
+                            z-index: 3;
+                            border-radius: 5px;
+                            opacity: 0;
+                            visibility: hidden;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: flex-start;
+                            a{
+                                width: 150px;
+                                font: 500 20px "Poppins";
+                                cursor: pointer;
+                                text-decoration: none;
+                            }
+
+                        }
+                        &:hover{
+                            .shop_item, .page_item, .category_item{
+                                opacity: 1;
+                                visibility: visible;
+                            }
+                        }
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            background-color: #282828;
+                            width: 0;
+                            height: 3px;
+                            transition: 0.5s;
+                            cursor: pointer;
+                        }
+
+                        &:hover {
+                            &::after {
+                                width: 100%;
+                            }
+                        }
+
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            background-color: #ffcc05;
+                            width: 0;
+                            height: 3px;
+                            transition: 0.5s;
+                            cursor: pointer;
+                        }
+
+                        &:hover {
+                            &::before {
+                                width: 100%;
+                            }
+                        }
+                    }
+
+                    a {
+                        font-weight: 600;
+                        font-size: 23px;
+
+                    }
+                }
+
+                &.user {
+                    align-items: center;
+                    gap: 12px;
+
+                    .dashboard {
+                        color: #fff;
+                        font-size: 18px;
+                        padding: 4px 12px;
+                        border-radius: 8px;
+                        background-color: #282828;
+                        border: 2px solid #282828;
+                        transition: 0.3s;
+
+                        &:hover {
+                            background-color: #fff;
+                            color: #282828;
+                        }
+                    }
+
+                    .react-icons {
+                        cursor: pointer;
+                        font-size: 25px;
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    .cart {
+                        position: relative;
+
+                        span {
+                            width: 20px;
+                            height: 20px;
+                            background-color: #ffcc05;
+                            color: #282828;
+                            position: absolute;
+                            top: -10px;
+                            right: -10px;
+                            font-size: 15px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                            font-weight: 600;
+                        }
+                    }
+                }
+
+                a {
+                    text-decoration: none;
+                    color: #282828;
+                }
+            }
+        }
+
+        .navbar-button {
+            cursor: pointer;
+            border: none;
+            outline: none;
+            color: black;
+            font-size: 30px;
+            display: none;
+        }
+    }
+}
+
+
+@media only screen and (min-width: 993px) and (max-width: 1280px) {
+    nav {
+        .navbar {
+            padding: 8px 0;
+
+            .routes {
+
+                ul {
+
+                    &.links {
+                        gap: 17px;
+    
+                        li {
+                            position: relative;
+                            // padding: 5px;
+                            .page_item{
+                                position: absolute;
+                                background-color: #ffff;
+                                top: 65px;
+                                left: -50px;
+                                padding: 10px 20px;
+                                transition: 0.2s;
+                                display: flex;
+                                gap: 10px;
+                                z-index: 3;
+                                border-radius: 5px;
+                                opacity: 0;
+                                visibility: hidden;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: flex-start;
+                                p{
+                                    width: 130px;
+                                    font: 500 15px "Poppins";
+                                    cursor: pointer;
+                                }
+    
+                            }
+                            .shop_item{
+                                position: absolute;
+                                background-color: #ffff;
+                                top: 65px;
+                                left: -250px;
+                                padding: 12px 40px;
+                                transition: 0.3s;
+                                display: flex;
+                                align-items: center;
+                                gap: 10px;
+                                z-index: 3;
+                                border-radius: 5px;
+                                opacity: 0;
+                                visibility: hidden;
+    
+                                .products{
+                                    width: 280px;
+                                    h2{
+                                        font: 600 18px "Poppins";
+                                        margin-bottom: 15px;
+                                    }
+                                    p{
+                                        font: 400 14px "Poppins";
+                                        margin-bottom: 1px;
+                                        cursor: pointer;
+                                    }
+                                }
+                                .image{
+                                    width: 170px;
+                                    img{
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                            .category_item{
+                                position: absolute;
+                                background-color: #ffff;
+                                top: 70px;
+                                left: -50px;
+                                padding: 10px 30px;
+                                transition: 0.2s;
+                                display: flex;
+                                gap: 10px;
+                                z-index: 3;
+                                border-radius: 5px;
+                                opacity: 0;
+                                visibility: hidden;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: flex-start;
+                                a{
+                                    width: 150px;
+                                    font: 500 20px "Poppins";
+                                    cursor: pointer;
+                                    text-decoration: none;
+                                }
+    
+                            }
+                            &:hover{
+                                .shop_item, .page_item, .category_item{
+                                    opacity: 1;
+                                    visibility: visible;
+                                }
+                            }
+    
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                background-color: #282828;
+                                width: 0;
+                                height: 3px;
+                                transition: 0.5s;
+                                cursor: pointer;
+                            }
+    
+                            &:hover {
+                                &::after {
+                                    width: 100%;
+                                }
+                            }
+    
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                bottom: 0;
+                                left: 0;
+                                background-color: #ffcc05;
+                                width: 0;
+                                height: 3px;
+                                transition: 0.5s;
+                                cursor: pointer;
+                            }
+    
+                            &:hover {
+                                &::before {
+                                    width: 100%;
+                                }
+                            }
+                        }
+    
+                        a {
+                            font-weight: 500;
+                            font-size: 20px;    
+                        }
+                    }
+
+                    &.user {
+                        gap: 8px;
+
+                        .dashboard {
+                            font-size: 16px;
+                            padding: 3px 9px;
+                        }
+
+                        .react-icons {
+                            font-size: 22px;
+                        }
+
+                        .cart {
+                            span {
+                                width: 18px;
+                                height: 18px;
+                                top: -8px;
+                                right: -8px;
+                                font-size: 13px;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: #282828;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width:992px) {
+    nav {
+        .navbar {
+            padding: 8px 0;
+
+            // gap: 30px;
+            .logo {
+                width: 30%;
+
+                img {
+                    width: 80%;
+                }
+            }
+
+            .routes {
+                width: 70%;
+                gap: 18px;
+
+                ul {
+
+                    &.links {
+                        gap: 12px;
+    
+                        li {
+                            position: relative;
+                            // padding: 5px;
+                            .page_item{
+                                display: none;    
+                            }
+                            .shop_item{
+                                display: none;
+                            }    
+                            .category_item{
+                                display: none;
+                            }
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                background-color: #282828;
+                                width: 0;
+                                height: 3px;
+                                transition: 0.5s;
+                                cursor: pointer;
+                            }
+    
+                            &:hover {
+                                &::after {
+                                    width: 100%;
+                                }
+                            }
+    
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                bottom: 0;
+                                left: 0;
+                                background-color: #ffcc05;
+                                width: 0;
+                                height: 3px;
+                                transition: 0.5s;
+                                cursor: pointer;
+                            }
+    
+                            &:hover {
+                                &::before {
+                                    width: 100%;
+                                }
+                            }
+                        }
+    
+                        a {
+                            font-weight: 500;
+                            font-size: 18px;
+                        }
+                    }
+
+                    &.user {
+                        gap: 5px;
+
+                        .dashboard {
+                            font-size: 14px;
+                            padding: 2px 8px;
+                        }
+
+                        .react-icons {
+                            font-size: 18px;
+                        }
+
+                        .cart {
+                            span {
+                                width: 18px;
+                                height: 18px;
+                                top: -8px;
+                                right: -8px;
+                                font-size: 13px;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: #282828;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width:768px) {
+    nav {
+        .navbar {
+            padding: 8px 0;
+
+            .logo {
+                width: 30%;
+            }
+
+            .routes {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                gap: 70px;
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                right: -50%;
+                z-index: 10;
+                background-color: #282828;
+                width: 50%;
+                transition: 0.5s;
+
+                ul {
+
+                    &.links {
+                        flex-direction: column;
+                        align-items: center;
+                        width: 100%;
+                        gap: 30px;
+                        margin-top: 80px;
+    
+                        li {
+                            position: relative;
+                            // padding: 5px;
+                            .page_item{
+                                display: none;    
+                            }
+                            .shop_item{
+                                display: none;
+                            }   
+                            .category_item{
+                                display: none;
+                            } 
+                            &::after {
+                                display: none;
+                            }
+    
+                            &::before {
+                                display: none;
+                            }
+    
+                        }
+    
+                        a {
+                            font-weight: 600;
+                            font-size: 22px;
+                            color: #fff;
+                        }
+                    }
+
+
+                    &.user {
+                        flex-direction: column;
+                        align-items: center;
+                        width: 100%;
+                        gap: 25px;
+
+                        .dashboard {
+                            font-size: 22px;
+                            padding: 4px 16px;
+                            background-color: #fff;
+                            color: #282828;
+                        }
+
+                        .react-icons {
+                            font-size: 28px;
+                            color: #fff;
+                        }
+
+                        .cart {
+                            span {
+                                width: 20px;
+                                height: 20px;
+                                top: -10px;
+                                right: -10px;
+                                font-size: 14px;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: #fff;
+
+                    }
+                }
+            }
+
+            .navbar-button {
+                display: block;
+
+                &.close {
+                    position: absolute;
+                    right: 20px;
+                    top: 20px;
+                    color: #fff;
+                }
+            }
+
+            .responsive {
+                transform: translateX(-100%);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    nav {
+        .navbar {
+            padding: 8px 0;
+
+            .logo {
+                width: 30%;
+            }
+
+            .routes {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                gap: 50px;
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                right: -50%;
+                z-index: 10;
+                background-color: #282828;
+                width: 50%;
+                transition: 0.5s;
+
+                ul {
+
+                    &.links {
+                        flex-direction: column;
+                        align-items: center;
+                        width: 100%;
+                        gap: 20px;
+                        margin-top: 80px;
+    
+                        li {
+                            position: relative;
+                            // padding: 5px;
+                            .page_item{
+                                display: none;    
+                            }
+                            .shop_item{
+                                display: none;
+                            }    
+                            .category_item{
+                                display: none;
+                            }
+                            &::after {
+                                display: none;
+                            }
+    
+                            &::before {
+                                display: none;
+                            }
+    
+                        }
+    
+                        a {
+                            font-weight: 500;
+                            font-size: 16px;
+                            color: #fff;
+                        }
+                    }
+
+
+                    &.user {
+                        flex-direction: column;
+                        align-items: center;
+                        width: 100%;
+                        gap: 20px;
+
+                        .dashboard {
+                            font-size: 16px;
+                            padding: 3px 12px;
+                            background-color: #fff;
+                            color: #282828;
+                        }
+
+                        .react-icons {
+                            font-size: 24px;
+                            color: #fff;
+                        }
+
+                        .cart {
+                            span {
+                                width: 18px;
+                                height: 18px;
+                                top: -8px;
+                                right: -8px;
+                                font-size: 12px;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: #fff;
+
+                    }
+                }
+            }
+
+            .navbar-button {
+                display: block;
+
+                &.close {
+                    position: absolute;
+                    font-size: 20px;
+                    right: 15px;
+                    top: 15px;
+                    color: #fff;
+                }
+            }
+
+            .responsive {
+                transform: translateX(-100%);
+            }
+        }
+    }
+}

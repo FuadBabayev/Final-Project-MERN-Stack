@@ -1,0 +1,304 @@
+.register {
+  background-color: #c9d6ff;
+  background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px 0;
+}
+.register .register_cart {
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  position: relative;
+  overflow: hidden;
+  width: 1000px;
+  height: calc(100vh - 300px);
+  max-width: 100%;
+  min-height: 520px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.register .register_cart .register_left-panel {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.register .register_cart .register_left-panel form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 100%;
+}
+.register .register_cart .register_left-panel form span {
+  font-size: 15px;
+}
+.register .register_cart .register_left-panel form span a {
+  text-decoration: underline;
+  font-weight: 700;
+  font-size: 16px;
+}
+.register .register_cart .register_left-panel form h1 {
+  font-size: 34px;
+  line-height: 18px;
+  letter-spacing: 0.3px;
+  margin: 16px 0;
+}
+.register .register_cart .register_left-panel form .social-icons {
+  margin: 15px 0;
+}
+.register .register_cart .register_left-panel form .social-icons a {
+  border: 2px solid #ccc;
+  border-radius: 20%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 3px;
+  width: 50px;
+  height: 50px;
+  transition: 0.6s;
+}
+.register .register_cart .register_left-panel form .social-icons a .react-icons {
+  font-size: 20px;
+}
+.register .register_cart .register_left-panel form .social-icons a:hover {
+  background-color: #512da8;
+  border: none;
+  color: white;
+}
+.register .register_cart .register_left-panel form button {
+  background-color: #512da8;
+  color: #fff;
+  font-size: 16px;
+  padding: 15px 60px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-top: 25px;
+  cursor: pointer;
+  transition: 0.6s;
+}
+.register .register_cart .register_left-panel form button:hover {
+  background-color: #fff;
+  color: #512da8;
+  border: 1px solid #512da8;
+}
+.register .register_cart .register_left-panel form input {
+  background-color: #eee;
+  border: none;
+  margin: 8px 0;
+  padding: 14px 25px;
+  font-size: 16px;
+  border-radius: 8px;
+  width: 320px;
+  outline: none;
+}
+.register .register_cart .register_right-panel {
+  background-image: url("./images/register.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #512da8;
+  height: 100%;
+  width: 50%;
+  border-radius: 0 100px 100px 0;
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1280px) {
+  .register {
+    padding: 40px 0;
+  }
+  .register .register_cart {
+    width: 900px;
+    height: calc(100vh - 350px);
+    max-width: 100%;
+    min-height: 460px;
+  }
+  .register .register_cart .register_right-panel {
+    border-radius: 0 80px 80px 0;
+  }
+  .register .register_cart .register_left-panel form span {
+    font-size: 13px;
+  }
+  .register .register_cart .register_left-panel form span a {
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .register .register_cart .register_left-panel form h1 {
+    font-size: 30px;
+    line-height: 17px;
+    margin: 15px 0;
+  }
+  .register .register_cart .register_left-panel form .social-icons {
+    margin: 13px 0;
+  }
+  .register .register_cart .register_left-panel form .social-icons a {
+    width: 40px;
+    height: 40px;
+  }
+  .register .register_cart .register_left-panel form .social-icons a .react-icons {
+    font-size: 18px;
+  }
+  .register .register_cart .register_left-panel form button {
+    font-size: 15px;
+    padding: 15px 50px;
+    margin-top: 22px;
+  }
+  .register .register_cart .register_left-panel form input {
+    margin: 8px 0;
+    padding: 13px 24px;
+    width: 280px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .register {
+    padding: 35px 0;
+  }
+  .register .register_cart {
+    width: 700px;
+    height: calc(100vh - 450px);
+    max-width: 100%;
+    min-height: 360px;
+  }
+  .register .register_cart .register_right-panel {
+    border-radius: 0 60px 60px 0;
+  }
+  .register .register_cart .register_left-panel form span {
+    font-size: 11px;
+  }
+  .register .register_cart .register_left-panel form span a {
+    font-weight: 500;
+    font-size: 12px;
+  }
+  .register .register_cart .register_left-panel form h1 {
+    font-size: 23px;
+    line-height: 16px;
+    margin: 12px 0;
+  }
+  .register .register_cart .register_left-panel form .social-icons {
+    margin: 10px 0;
+  }
+  .register .register_cart .register_left-panel form .social-icons a {
+    width: 30px;
+    height: 30px;
+  }
+  .register .register_cart .register_left-panel form .social-icons a .react-icons {
+    font-size: 15px;
+  }
+  .register .register_cart .register_left-panel form button {
+    font-size: 13px;
+    padding: 12px 40px;
+    margin-top: 15px;
+  }
+  .register .register_cart .register_left-panel form input {
+    margin: 6px 0;
+    padding: 10px 20px;
+    width: 230px;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .register {
+    padding: 30px 0;
+  }
+  .register .register_cart {
+    width: 450px;
+    height: calc(100vh - 400px);
+    max-width: 100%;
+    min-height: 360px;
+  }
+  .register .register_cart .register_right-panel {
+    display: none;
+  }
+  .register .register_cart .register_left-panel {
+    width: 100%;
+  }
+  .register .register_cart .register_left-panel form span {
+    font-size: 12px;
+  }
+  .register .register_cart .register_left-panel form span a {
+    font-weight: 500;
+    font-size: 13px;
+  }
+  .register .register_cart .register_left-panel form h1 {
+    font-size: 26px;
+    line-height: 14px;
+    margin: 12px 0;
+  }
+  .register .register_cart .register_left-panel form .social-icons {
+    margin: 14px 0;
+  }
+  .register .register_cart .register_left-panel form .social-icons a {
+    width: 32px;
+    height: 32px;
+  }
+  .register .register_cart .register_left-panel form .social-icons a .react-icons {
+    font-size: 16px;
+  }
+  .register .register_cart .register_left-panel form button {
+    font-size: 11px;
+    padding: 12px 36px;
+    margin-top: 14px;
+  }
+  .register .register_cart .register_left-panel form input {
+    margin: 5px 0;
+    padding: 8px 15px;
+    width: 260px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .register {
+    padding: 50px 0;
+  }
+  .register .register_cart {
+    width: 320px;
+    height: calc(100vh - 440px);
+    max-width: 100%;
+    min-height: 300px;
+  }
+  .register .register_cart .register_right-panel {
+    display: none;
+  }
+  .register .register_cart .register_left-panel {
+    width: 100%;
+  }
+  .register .register_cart .register_left-panel form span {
+    font-size: 9px;
+  }
+  .register .register_cart .register_left-panel form span a {
+    font-weight: 400;
+    font-size: 10px;
+  }
+  .register .register_cart .register_left-panel form h1 {
+    font-size: 20px;
+    line-height: 10px;
+    margin: 10px 0;
+  }
+  .register .register_cart .register_left-panel form .social-icons {
+    margin: 8px 0;
+  }
+  .register .register_cart .register_left-panel form .social-icons a {
+    width: 28px;
+    height: 28px;
+  }
+  .register .register_cart .register_left-panel form .social-icons a .react-icons {
+    font-size: 15px;
+  }
+  .register .register_cart .register_left-panel form button {
+    font-size: 10px;
+    padding: 10px 30px;
+    margin-top: 10px;
+  }
+  .register .register_cart .register_left-panel form input {
+    margin: 5px 0;
+    padding: 6px 12px;
+    width: 200px;
+  }
+}

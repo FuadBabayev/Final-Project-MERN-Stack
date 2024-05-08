@@ -1,0 +1,348 @@
+.login {
+  background-color: #c9d6ff;
+  background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px 0;
+}
+.login .login_cart {
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  position: relative;
+  overflow: hidden;
+  width: 1000px;
+  max-width: 100%;
+  height: calc(100vh - 300px);
+  min-height: 520px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login .login_cart .login_left-panel {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login .login_cart .login_left-panel form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 100%;
+}
+.login .login_cart .login_left-panel form span {
+  font-size: 15px;
+}
+.login .login_cart .login_left-panel form span a {
+  text-decoration: underline;
+  font-weight: 700;
+  font-size: 16px;
+}
+.login .login_cart .login_left-panel form h1 {
+  font-size: 34px;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+  margin: 20px 0;
+}
+.login .login_cart .login_left-panel form .social-icons {
+  margin: 20px 0;
+}
+.login .login_cart .login_left-panel form .social-icons a {
+  border: 2px solid #ccc;
+  border-radius: 20%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 3px;
+  width: 50px;
+  height: 50px;
+  transition: 0.6s;
+}
+.login .login_cart .login_left-panel form .social-icons a .react-icons {
+  font-size: 20px;
+}
+.login .login_cart .login_left-panel form .social-icons a:hover {
+  background-color: #512da8;
+  border: none;
+  color: white;
+}
+.login .login_cart .login_left-panel form button {
+  background-color: #512da8;
+  color: #fff;
+  font-size: 16px;
+  padding: 18px 60px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: 0.6s;
+}
+.login .login_cart .login_left-panel form button:hover {
+  background-color: #fff;
+  color: #512da8;
+  border: 1px solid #512da8;
+}
+.login .login_cart .login_left-panel form input {
+  background-color: #eee;
+  border: none;
+  margin: 10px 0;
+  padding: 15px 25px;
+  font-size: 16px;
+  border-radius: 8px;
+  width: 320px;
+  outline: none;
+}
+.login .login_cart .login_left-panel form .input-password {
+  position: relative;
+}
+.login .login_cart .login_left-panel form .input-password .show_hide {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+  font-size: 20px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+.login .login_cart .login_left-panel form .input-password .show_hide .react-show-hide {
+  color: #512da8;
+}
+.login .login_cart .login_right-panel {
+  background-image: url("./images/login.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #512da8;
+  height: 100%;
+  width: 50%;
+  border-radius: 100px 0 0 100px;
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1280px) {
+  .login {
+    padding: 40px 0;
+  }
+  .login .login_cart {
+    width: 900px;
+    height: calc(100vh - 350px);
+    max-width: 100%;
+    min-height: 460px;
+  }
+  .login .login_cart .login_right-panel {
+    border-radius: 80px 0 0 80px;
+  }
+  .login .login_cart .login_left-panel form span {
+    font-size: 13px;
+  }
+  .login .login_cart .login_left-panel form span a {
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .login .login_cart .login_left-panel form h1 {
+    font-size: 30px;
+    line-height: 18px;
+    margin: 18px 0;
+  }
+  .login .login_cart .login_left-panel form .social-icons {
+    margin: 18px 0;
+  }
+  .login .login_cart .login_left-panel form .social-icons a {
+    width: 40px;
+    height: 40px;
+  }
+  .login .login_cart .login_left-panel form .social-icons a .react-icons {
+    font-size: 18px;
+  }
+  .login .login_cart .login_left-panel form button {
+    font-size: 15px;
+    padding: 16px 50px;
+    margin-top: 26px;
+  }
+  .login .login_cart .login_left-panel form input {
+    margin: 9px 0;
+    padding: 14px 24px;
+    width: 280px;
+  }
+  .login .login_cart .login_left-panel form .input-password .show_hide {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+  .login .login_cart .login_left-panel form .input-password .show_hide .react-show-hide {
+    color: #512da8;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .login {
+    padding: 35px 0;
+  }
+  .login .login_cart {
+    width: 700px;
+    height: calc(100vh - 450px);
+    max-width: 100%;
+    min-height: 360px;
+  }
+  .login .login_cart .login_right-panel {
+    border-radius: 60px 0 0 60px;
+  }
+  .login .login_cart .login_left-panel form span {
+    font-size: 11px;
+  }
+  .login .login_cart .login_left-panel form span a {
+    font-weight: 500;
+    font-size: 12px;
+  }
+  .login .login_cart .login_left-panel form h1 {
+    font-size: 23px;
+    line-height: 16px;
+    margin: 16px 0;
+  }
+  .login .login_cart .login_left-panel form .social-icons {
+    margin: 16px 0;
+  }
+  .login .login_cart .login_left-panel form .social-icons a {
+    width: 32px;
+    height: 32px;
+  }
+  .login .login_cart .login_left-panel form .social-icons a .react-icons {
+    font-size: 16px;
+  }
+  .login .login_cart .login_left-panel form button {
+    font-size: 13px;
+    padding: 14px 40px;
+    margin-top: 20px;
+  }
+  .login .login_cart .login_left-panel form input {
+    margin: 8px 0;
+    padding: 12px 20px;
+    width: 230px;
+  }
+  .login .login_cart .login_left-panel form .input-password .show_hide {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+  .login .login_cart .login_left-panel form .input-password .show_hide .react-show-hide {
+    color: #512da8;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .login {
+    padding: 30px 0;
+  }
+  .login .login_cart {
+    width: 450px;
+    height: calc(100vh - 400px);
+    max-width: 100%;
+    min-height: 360px;
+  }
+  .login .login_cart .login_right-panel {
+    display: none;
+  }
+  .login .login_cart .login_left-panel {
+    width: 100%;
+  }
+  .login .login_cart .login_left-panel form span {
+    font-size: 12px;
+  }
+  .login .login_cart .login_left-panel form span a {
+    font-weight: 500;
+    font-size: 13px;
+  }
+  .login .login_cart .login_left-panel form h1 {
+    font-size: 28px;
+    line-height: 16px;
+    margin: 16px 0;
+  }
+  .login .login_cart .login_left-panel form .social-icons {
+    margin: 14px 0;
+  }
+  .login .login_cart .login_left-panel form .social-icons a {
+    width: 35px;
+    height: 35px;
+  }
+  .login .login_cart .login_left-panel form .social-icons a .react-icons {
+    font-size: 18px;
+  }
+  .login .login_cart .login_left-panel form button {
+    font-size: 11px;
+    padding: 14px 36px;
+    margin-top: 18px;
+  }
+  .login .login_cart .login_left-panel form input {
+    margin: 7px 0;
+    padding: 10px 15px;
+    width: 260px;
+  }
+  .login .login_cart .login_left-panel form .input-password .show_hide {
+    font-size: 18px;
+    padding: 8px 16px;
+  }
+  .login .login_cart .login_left-panel form .input-password .show_hide .react-show-hide {
+    color: #512da8;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .login {
+    padding: 50px 0;
+  }
+  .login .login_cart {
+    width: 320px;
+    height: calc(100vh - 440px);
+    max-width: 100%;
+    min-height: 300px;
+  }
+  .login .login_cart .login_right-panel {
+    display: none;
+  }
+  .login .login_cart .login_left-panel {
+    width: 100%;
+  }
+  .login .login_cart .login_left-panel form span {
+    font-size: 9px;
+  }
+  .login .login_cart .login_left-panel form span a {
+    font-weight: 400;
+    font-size: 10px;
+  }
+  .login .login_cart .login_left-panel form h1 {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 10px auto;
+    text-align: center;
+  }
+  .login .login_cart .login_left-panel form .social-icons {
+    margin: 10px 0;
+  }
+  .login .login_cart .login_left-panel form .social-icons a {
+    width: 26px;
+    height: 26px;
+  }
+  .login .login_cart .login_left-panel form .social-icons a .react-icons {
+    font-size: 16px;
+  }
+  .login .login_cart .login_left-panel form button {
+    font-size: 10px;
+    padding: 12px 30px;
+    margin-top: 14px;
+  }
+  .login .login_cart .login_left-panel form input {
+    margin: 7px 0;
+    padding: 8px 12px;
+    width: 200px;
+  }
+  .login .login_cart .login_left-panel form .input-password .show_hide {
+    font-size: 16px;
+    padding: 7px 14px;
+  }
+  .login .login_cart .login_left-panel form .input-password .show_hide .react-show-hide {
+    color: #512da8;
+  }
+}

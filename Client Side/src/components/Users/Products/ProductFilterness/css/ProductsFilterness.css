@@ -1,0 +1,412 @@
+.productsFilterness {
+  position: relative;
+  color: #282828;
+  background-color: whitesmoke;
+}
+.productsFilterness .productsFiltering {
+  padding: 40px 0 80px;
+}
+.productsFilterness .productsFiltering .productFilter_open {
+  display: none;
+}
+.productsFilterness .productsFiltering .productsFiltering_header {
+  margin-bottom: 20px;
+}
+.productsFilterness .productsFiltering .productsFiltering_header h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #282828;
+}
+.productsFilterness .productsFiltering .productsFiltering_main {
+  display: flex;
+  justify-content: flex-start;
+}
+.productsFilterness .productsFiltering .productsFiltering_main aside {
+  width: 25%;
+  min-height: 100vh;
+  padding: 20px;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 20px;
+}
+.productsFilterness .productsFiltering .productsFiltering_main aside .close_button_icon {
+  display: none;
+}
+.productsFilterness .productsFiltering .productsFiltering_main aside form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.productsFilterness .productsFiltering .productsFiltering_main aside form .product_filter_items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.productsFilterness .productsFiltering .productsFiltering_main aside form .product_filter_items .heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.productsFilterness .productsFiltering .productsFiltering_main aside form .product_filter_items .heading h2 {
+  font-size: 22px;
+  font-weight: 600;
+}
+.productsFilterness .productsFiltering .productsFiltering_main aside form .product_filter_items .heading .react-icons {
+  font-size: 25px;
+}
+.productsFilterness .productsFiltering .productsFiltering_main aside form .product_filter_items .colors_item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+}
+.productsFilterness .productsFiltering .productsFiltering_main aside form .product_filter_items .colors_item .color_item_radio input {
+  display: none;
+}
+.productsFilterness .productsFiltering .productsFiltering_main aside form .product_filter_items .colors_item .color_item_radio input:checked ~ label {
+  outline: 4px solid black;
+  outline-offset: 3px;
+}
+.productsFilterness .productsFiltering .productsFiltering_main aside form .product_filter_items .colors_item .color_item_radio label {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: 0.2s;
+  cursor: pointer;
+  border: 2px solid gray;
+}
+.productsFilterness .productsFiltering .productsFiltering_main aside form .product_filter_item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.productsFilterness .productsFiltering .productsFiltering_main aside form .product_filter_item .heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.productsFilterness .productsFiltering .productsFiltering_main aside form .product_filter_item .heading h2 {
+  font-size: 22px;
+  font-weight: 600;
+}
+.productsFilterness .productsFiltering .productsFiltering_main aside form .product_filter_item .heading .react-icons {
+  font-size: 25px;
+}
+.productsFilterness .productsFiltering .productsFiltering_main aside form .product_filter_item .brand_items .brand_item {
+  margin-top: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  width: 100%;
+}
+.productsFilterness .productsFiltering .productsFiltering_main aside form .product_filter_item .brand_items .brand_item input {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+.productsFilterness .productsFiltering .productsFiltering_main aside form .product_filter_item .brand_items .brand_item input:checked ~ label {
+  font-weight: 800;
+}
+.productsFilterness .productsFiltering .productsFiltering_main aside form .product_filter_item .brand_items .brand_item label {
+  cursor: pointer;
+  width: 90%;
+  text-align: right;
+  font-size: 18px;
+  transition: 0.3s;
+}
+.productsFilterness .productsFiltering .productsFiltering_main section {
+  width: 75%;
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1280px) {
+  .productsFilterness .productsFiltering .productsFiltering_main aside form {
+    gap: 18px;
+  }
+  .productsFilterness .productsFiltering .productsFiltering_main aside form .product_filter_items .heading h2 {
+    font-size: 20px;
+  }
+  .productsFilterness .productsFiltering .productsFiltering_main aside form .product_filter_items .heading .react-icons {
+    font-size: 22px;
+  }
+  .productsFilterness .productsFiltering .productsFiltering_main aside form .product_filter_items .colors_item {
+    gap: 6px;
+  }
+  .productsFilterness .productsFiltering .productsFiltering_main aside form .product_filter_items .colors_item .color_item_radio input:checked ~ label {
+    outline: 3px solid black;
+  }
+  .productsFilterness .productsFiltering .productsFiltering_main aside form .product_filter_items .colors_item .color_item_radio label {
+    width: 35px;
+    height: 35px;
+  }
+  .productsFilterness .productsFiltering .productsFiltering_main aside form .product_filter_item .heading h2 {
+    font-size: 20px;
+  }
+  .productsFilterness .productsFiltering .productsFiltering_main aside form .product_filter_item .heading .react-icons {
+    font-size: 22px;
+  }
+  .productsFilterness .productsFiltering .productsFiltering_main aside form .product_filter_item .brand_items .brand_item input {
+    width: 22px;
+    height: 23px;
+  }
+  .productsFilterness .productsFiltering .productsFiltering_main aside form .product_filter_item .brand_items .brand_item label {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .productsFilterness .productsFiltering .productsFiltering_main aside {
+    width: 30%;
+    padding: 15px;
+  }
+  .productsFilterness .productsFiltering .productsFiltering_main aside form .product_filter_items .heading h2 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .productsFilterness .productsFiltering .productsFiltering_main aside form .product_filter_items .heading .react-icons {
+    font-size: 21px;
+  }
+  .productsFilterness .productsFiltering .productsFiltering_main aside form .product_filter_items .colors_item {
+    gap: 5px;
+  }
+  .productsFilterness .productsFiltering .productsFiltering_main aside form .product_filter_items .colors_item .color_item_radio input:checked ~ label {
+    outline: 3px solid black;
+  }
+  .productsFilterness .productsFiltering .productsFiltering_main aside form .product_filter_items .colors_item .color_item_radio label {
+    width: 29px;
+    height: 29px;
+  }
+  .productsFilterness .productsFiltering .productsFiltering_main aside form .product_filter_item .heading h2 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .productsFilterness .productsFiltering .productsFiltering_main aside form .product_filter_item .heading .react-icons {
+    font-size: 21px;
+  }
+  .productsFilterness .productsFiltering .productsFiltering_main aside form .product_filter_item .brand_items .brand_item input {
+    width: 22px;
+    height: 22px;
+  }
+  .productsFilterness .productsFiltering .productsFiltering_main aside form .product_filter_item .brand_items .brand_item input:checked ~ label {
+    font-weight: 700;
+  }
+  .productsFilterness .productsFiltering .productsFiltering_main section {
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .productsFilterness .productsFiltering {
+    padding: 20px 0 60px;
+  }
+  .productsFilterness .productsFiltering .productsFiltering_header {
+    margin-bottom: 16px;
+  }
+  .productsFilterness .productsFiltering .productsFiltering_header h1 {
+    font-size: 32px;
+  }
+  .productsFilterness .productsFiltering .productsFiltering_main aside {
+    width: 35%;
+    padding: 12px;
+  }
+  .productsFilterness .productsFiltering .productsFiltering_main aside form .product_filter_items .heading h2 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .productsFilterness .productsFiltering .productsFiltering_main aside form .product_filter_items .heading .react-icons {
+    font-size: 20px;
+  }
+  .productsFilterness .productsFiltering .productsFiltering_main aside form .product_filter_items .colors_item {
+    gap: 4px;
+  }
+  .productsFilterness .productsFiltering .productsFiltering_main aside form .product_filter_items .colors_item .color_item_radio input:checked ~ label {
+    outline: 3px solid black;
+    outline-offset: 2px;
+  }
+  .productsFilterness .productsFiltering .productsFiltering_main aside form .product_filter_items .colors_item .color_item_radio label {
+    width: 26px;
+    height: 26px;
+  }
+  .productsFilterness .productsFiltering .productsFiltering_main aside form .product_filter_item .heading h2 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .productsFilterness .productsFiltering .productsFiltering_main aside form .product_filter_item .heading .react-icons {
+    font-size: 20px;
+  }
+  .productsFilterness .productsFiltering .productsFiltering_main aside form .product_filter_item .brand_items .brand_item {
+    margin-top: 2px;
+  }
+  .productsFilterness .productsFiltering .productsFiltering_main aside form .product_filter_item .brand_items .brand_item input {
+    width: 20px;
+    height: 20px;
+  }
+  .productsFilterness .productsFiltering .productsFiltering_main aside form .product_filter_item .brand_items .brand_item input:checked ~ label {
+    font-weight: 700;
+  }
+  .productsFilterness .productsFiltering .productsFiltering_main aside form .product_filter_item .brand_items .brand_item label {
+    font-size: 14px;
+  }
+  .productsFilterness .productsFiltering .productsFiltering_main section {
+    width: 65%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .productsFilterness {
+    position: relative;
+  }
+  .productsFilterness .productsFiltering {
+    padding: 56px 0 50px;
+  }
+  .productsFilterness .productsFiltering .productFilter_open {
+    display: flex;
+    position: absolute;
+    top: 8px;
+    left: 6px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .productsFilterness .productsFiltering .productFilter_open .react-icons {
+    color: #282828;
+    font-size: 50px;
+  }
+  .productsFilterness .productsFiltering .productsFiltering_header {
+    margin-bottom: 15px;
+  }
+  .productsFilterness .productsFiltering .productsFiltering_header h1 {
+    font-size: 32px;
+  }
+  .productsFilterness .productsFiltering .productsFiltering_main {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .productsFilterness .productsFiltering .productsFiltering_main aside {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    bottom: 0;
+    z-index: 2;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 0;
+    padding-top: 60px;
+    transition: 0.5s;
+    background-color: #282828;
+    color: #fff;
+  }
+  .productsFilterness .productsFiltering .productsFiltering_main aside .close_button_icon {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .productsFilterness .productsFiltering .productsFiltering_main aside .close_button_icon .react-icons {
+    font-size: 25px;
+    color: #fff;
+  }
+  .productsFilterness .productsFiltering .productsFiltering_main aside form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 15px;
+  }
+  .productsFilterness .productsFiltering .productsFiltering_main aside form .product_filter_items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .productsFilterness .productsFiltering .productsFiltering_main aside form .product_filter_items .heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  .productsFilterness .productsFiltering .productsFiltering_main aside form .product_filter_items .heading h2 {
+    font-size: 22px;
+    font-weight: 600;
+  }
+  .productsFilterness .productsFiltering .productsFiltering_main aside form .product_filter_items .heading .react-icons {
+    font-size: 25px;
+  }
+  .productsFilterness .productsFiltering .productsFiltering_main aside form .product_filter_items .colors_item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+  }
+  .productsFilterness .productsFiltering .productsFiltering_main aside form .product_filter_items .colors_item .color_item_radio input {
+    display: none;
+  }
+  .productsFilterness .productsFiltering .productsFiltering_main aside form .product_filter_items .colors_item .color_item_radio input:checked ~ label {
+    outline: 4px solid #fff;
+    outline-offset: 3px;
+    padding: 10px;
+  }
+  .productsFilterness .productsFiltering .productsFiltering_main aside form .product_filter_items .colors_item .color_item_radio label {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: 0.2s;
+    cursor: pointer;
+  }
+  .productsFilterness .productsFiltering .productsFiltering_main aside form .product_filter_item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .productsFilterness .productsFiltering .productsFiltering_main aside form .product_filter_item .heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  .productsFilterness .productsFiltering .productsFiltering_main aside form .product_filter_item .heading h2 {
+    font-size: 22px;
+    font-weight: 600;
+  }
+  .productsFilterness .productsFiltering .productsFiltering_main aside form .product_filter_item .heading .react-icons {
+    font-size: 25px;
+  }
+  .productsFilterness .productsFiltering .productsFiltering_main aside form .product_filter_item .brand_items .brand_item {
+    margin-top: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    width: 100%;
+  }
+  .productsFilterness .productsFiltering .productsFiltering_main aside form .product_filter_item .brand_items .brand_item input {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+  }
+  .productsFilterness .productsFiltering .productsFiltering_main aside form .product_filter_item .brand_items .brand_item input:checked ~ label {
+    font-weight: 800;
+  }
+  .productsFilterness .productsFiltering .productsFiltering_main aside form .product_filter_item .brand_items .brand_item label {
+    cursor: pointer;
+    width: 90%;
+    text-align: right;
+    font-size: 18px;
+    transition: 0.3s;
+  }
+  .productsFilterness .productsFiltering .productsFiltering_main .responsive {
+    transform: translateX(100%);
+  }
+  .productsFilterness .productsFiltering .productsFiltering_main section {
+    width: 100%;
+  }
+}

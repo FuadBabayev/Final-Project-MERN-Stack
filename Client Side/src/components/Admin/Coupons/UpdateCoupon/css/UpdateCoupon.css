@@ -1,0 +1,362 @@
+.addCoupon {
+  padding: 50px 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.addCoupon .addProduct-header h2 {
+  font-size: 34px;
+}
+.addCoupon .addProduct-form {
+  width: 65%;
+}
+.addCoupon .addProduct-form form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 32px 48px rgba(132, 139, 200, 0.18);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.addCoupon .addProduct-form form label {
+  font-size: 16px;
+  font-weight: 500;
+}
+.addCoupon .addProduct-form form input {
+  width: 100%;
+}
+.addCoupon .addProduct-form form .name {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 4px;
+}
+.addCoupon .addProduct-form form .name label {
+  font-size: 16px;
+  font-weight: 500;
+}
+.addCoupon .addProduct-form form .name input {
+  min-height: 35px;
+  border-radius: 4px;
+  border: 1px solid #aeaeae;
+  transition: 0.3s;
+  outline: none;
+  padding: 0 10px;
+}
+.addCoupon .addProduct-form form .name select {
+  height: 35px;
+  padding-left: 10px;
+  border-radius: 4px;
+  background-color: #fff;
+  border: 1px solid #aeaeae;
+  color: #282828;
+}
+.addCoupon .addProduct-form form .name textarea {
+  resize: vertical;
+  min-height: 70px;
+  outline: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  line-height: 15px;
+}
+.addCoupon .addProduct-form form .name .upload_images_background {
+  height: 200px;
+  border: 3px dashed #aeaeae;
+  border-radius: 15px;
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+.addCoupon .addProduct-form form .name .upload_images_background .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50%;
+}
+.addCoupon .addProduct-form form .name .upload_images_background .icon .react-icons {
+  font-size: 80px;
+}
+.addCoupon .addProduct-form form .name .upload_images_background .information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 25%;
+}
+.addCoupon .addProduct-form form .name .upload_images_background .information h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #5a58e7;
+  margin-bottom: -5px;
+}
+.addCoupon .addProduct-form form .name .upload_images_background .information p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #282828;
+}
+.addCoupon .addProduct-form form .name .upload_images_background .input {
+  width: 100%;
+  height: 25%;
+  display: flex;
+}
+.addCoupon .addProduct-form form .select {
+  width: 100%;
+}
+.addCoupon .addProduct-form form .select .react-select {
+  display: flex;
+  flex-direction: column;
+}
+.addCoupon .addProduct-form form .select .react-select input {
+  height: 35px;
+  outline: none;
+  border: 1px solid #aeaeae;
+  padding-left: 10px;
+  border-radius: 5px;
+  color: #282828;
+  background-color: #fff;
+}
+.addCoupon .addProduct-form form .button {
+  width: 100%;
+  height: 60px;
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.addCoupon .addProduct-form form .button button {
+  background-color: #512da8;
+  color: #fff;
+  font-size: 16px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: 0.6s;
+  width: 100%;
+  height: 100%;
+}
+.addCoupon .addProduct-form form .button button:hover {
+  background-color: #fff;
+  color: #512da8;
+  border: 1px solid #512da8;
+}
+.addCoupon .addProduct-form form:hover {
+  box-shadow: none;
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1280px) {
+  .addCoupon {
+    padding: 50px 100px;
+    gap: 18px;
+    width: 100%;
+  }
+  .addCoupon .addProduct-header h2 {
+    font-size: 30px;
+  }
+  .addCoupon .addProduct-form {
+    width: 70%;
+  }
+  .addCoupon .addProduct-form form {
+    padding: 22px;
+    gap: 12px;
+  }
+  .addCoupon .addProduct-form form label {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .addCoupon .addProduct-form form input {
+    width: 100%;
+  }
+  .addCoupon .addProduct-form form .name {
+    gap: 4px;
+  }
+  .addCoupon .addProduct-form form .name label {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .addCoupon .addProduct-form form .name input {
+    min-height: 30px;
+  }
+  .addCoupon .addProduct-form form .name select {
+    height: 35px;
+    padding-left: 10px;
+  }
+  .addCoupon .addProduct-form form .name textarea {
+    resize: vertical;
+    min-height: 70px;
+    outline: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    line-height: 15px;
+  }
+  .addCoupon .addProduct-form form .name .upload_images_background {
+    height: 200px;
+    border: 3px dashed #aeaeae;
+    border-radius: 15px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+  }
+  .addCoupon .addProduct-form form .name .upload_images_background .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+  }
+  .addCoupon .addProduct-form form .name .upload_images_background .icon .react-icons {
+    font-size: 80px;
+  }
+  .addCoupon .addProduct-form form .name .upload_images_background .information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 25%;
+  }
+  .addCoupon .addProduct-form form .name .upload_images_background .information h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #5a58e7;
+    margin-bottom: -5px;
+  }
+  .addCoupon .addProduct-form form .name .upload_images_background .information p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #282828;
+  }
+  .addCoupon .addProduct-form form .name .upload_images_background .input {
+    width: 100%;
+    height: 25%;
+    display: flex;
+  }
+  .addCoupon .addProduct-form form .select {
+    width: 100%;
+  }
+  .addCoupon .addProduct-form form .select .react-select {
+    display: flex;
+    flex-direction: column;
+  }
+  .addCoupon .addProduct-form form .select .react-select input {
+    height: 35px;
+    outline: none;
+    border: 1px solid #aeaeae;
+    padding-left: 10px;
+    border-radius: 5px;
+    color: #282828;
+    background-color: #fff;
+  }
+  .addCoupon .addProduct-form form .button {
+    width: 100%;
+    height: 60px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .addCoupon .addProduct-form form .button button {
+    background-color: #512da8;
+    color: #fff;
+    font-size: 16px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: 0.6s;
+    width: 100%;
+    height: 100%;
+  }
+  .addCoupon .addProduct-form form .button button:hover {
+    background-color: #fff;
+    color: #512da8;
+    border: 1px solid #512da8;
+  }
+  .addCoupon .addProduct-form form:hover {
+    box-shadow: none;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .addCoupon {
+    padding: 20px;
+    gap: 10px;
+  }
+  .addCoupon .addProduct-header h2 {
+    font-size: 30px;
+  }
+  .addCoupon .addProduct-form {
+    width: 90%;
+  }
+  .addCoupon .addProduct-form form .name {
+    width: 100%;
+    gap: 4px;
+  }
+  .addCoupon .addProduct-form form .name .upload_images_background {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .addCoupon {
+    padding: 20px;
+    gap: 15px;
+  }
+  .addCoupon .addProduct-header h2 {
+    font-size: 28px;
+  }
+  .addCoupon .addProduct-form {
+    width: 100%;
+  }
+  .addCoupon .addProduct-form form .name .upload_images_background {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .addCoupon {
+    padding: 3px;
+    gap: 12px;
+  }
+  .addCoupon .addProduct-header h2 {
+    font-size: 18px;
+  }
+  .addCoupon .addProduct-form {
+    width: 100%;
+  }
+  .addCoupon .addProduct-form form {
+    gap: 18px;
+    padding: 10px;
+  }
+  .addCoupon .addProduct-form form label {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .addCoupon .addProduct-form form .name label {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .addCoupon .addProduct-form form .name .upload_images_background {
+    width: 100%;
+  }
+  .addCoupon .addProduct-form form .name .upload_images_background .information h3 {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .addCoupon .addProduct-form form .name .upload_images_background .information p {
+    font-size: 12px;
+    font-weight: 400;
+  }
+}

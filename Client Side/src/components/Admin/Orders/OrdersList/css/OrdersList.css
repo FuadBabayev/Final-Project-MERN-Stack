@@ -1,0 +1,320 @@
+.orderList_recent-order {
+  margin: 30px 0 50px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.orderList_recent-order h2 {
+  color: #282828;
+  font-size: 25px;
+  font-weight: 800;
+}
+.orderList_recent-order .orderList_table {
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 12px;
+  box-shadow: 0 32px 48px rgba(132, 139, 200, 0.18);
+  text-align: left;
+}
+.orderList_recent-order .orderList_table thead {
+  background-color: rgba(132, 139, 200, 0.18);
+  height: 40px;
+}
+.orderList_recent-order .orderList_table thead .order_ID {
+  width: 20%;
+}
+.orderList_recent-order .orderList_table thead .status {
+  width: 12%;
+}
+.orderList_recent-order .orderList_table thead .order_date {
+  width: 15%;
+}
+.orderList_recent-order .orderList_table thead .delivery_date {
+  width: 15%;
+}
+.orderList_recent-order .orderList_table thead .payment_status {
+  width: 20%;
+}
+.orderList_recent-order .orderList_table thead .total {
+  width: 10%;
+}
+.orderList_recent-order .orderList_table thead .update {
+  width: 8%;
+}
+.orderList_recent-order .orderList_table thead tr th {
+  padding-left: 7px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.orderList_recent-order .orderList_table tbody tr {
+  height: 30px;
+}
+.orderList_recent-order .orderList_table tbody tr td {
+  padding-left: 7px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.orderList_recent-order .orderList_table tbody tr td:nth-child(1) {
+  font-weight: 600;
+}
+.orderList_recent-order .orderList_table tbody tr td:nth-child(2) span {
+  background-color: red;
+  padding: 3px 8px;
+  border-radius: 7px;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 500;
+}
+.orderList_recent-order .orderList_table tbody tr td.edit {
+  padding-left: 15px;
+  cursor: pointer;
+}
+.orderList_recent-order .orderList_table tbody tr .react-icons {
+  font-size: 24px;
+  color: #282828;
+  transition: 0.3s;
+}
+.orderList_recent-order .orderList_table tbody tr .react-icons:hover {
+  color: #ffcc05;
+}
+.orderList_recent-order .orderList_table:hover {
+  box-shadow: none;
+}
+.orderList_recent-order .orderList_table-cart {
+  display: none;
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1280px) {
+  .orderList_recent-order {
+    margin: 25px 0 40px 0;
+    gap: 4px;
+  }
+  .orderList_recent-order h2 {
+    font-size: 22px;
+    font-weight: 700;
+  }
+  .orderList_recent-order .orderList_table {
+    padding: 4px 8px;
+    border-radius: 10px;
+  }
+  .orderList_recent-order .orderList_table thead {
+    height: 36px;
+  }
+  .orderList_recent-order .orderList_table thead tr th {
+    padding-left: 5px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .orderList_recent-order .orderList_table tbody tr {
+    height: 27px;
+  }
+  .orderList_recent-order .orderList_table tbody tr td {
+    padding-left: 5px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .orderList_recent-order .orderList_table tbody tr td:nth-child(1) {
+    font-weight: 500;
+  }
+  .orderList_recent-order .orderList_table tbody tr td:nth-child(2) span {
+    padding: 3px 8px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .orderList_recent-order .orderList_table tbody tr td.edit {
+    padding-left: 10px;
+  }
+  .orderList_recent-order .orderList_table tbody tr .react-icons {
+    font-size: 21px;
+  }
+  .orderList_recent-order .orderList_table-cart {
+    display: none;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .orderList_recent-order {
+    margin: 25px 0 40px 0;
+    gap: 3px;
+  }
+  .orderList_recent-order h2 {
+    font-size: 19px;
+    font-weight: 600;
+  }
+  .orderList_recent-order .orderList_table {
+    padding: 2px 4px;
+    border-radius: 8px;
+  }
+  .orderList_recent-order .orderList_table thead {
+    height: 32px;
+  }
+  .orderList_recent-order .orderList_table thead .order_ID {
+    width: 19%;
+  }
+  .orderList_recent-order .orderList_table thead .delivery_date {
+    width: 16%;
+  }
+  .orderList_recent-order .orderList_table thead tr th {
+    padding-left: 1px;
+    font-size: 11px;
+    font-weight: 600;
+  }
+  .orderList_recent-order .orderList_table tbody tr {
+    height: 22px;
+  }
+  .orderList_recent-order .orderList_table tbody tr td {
+    padding-left: 3px;
+    font-size: 9px;
+    font-weight: 300;
+  }
+  .orderList_recent-order .orderList_table tbody tr td:nth-child(1) {
+    font-weight: 400;
+  }
+  .orderList_recent-order .orderList_table tbody tr td:nth-child(2) span {
+    padding: 2px 5px;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: 400;
+  }
+  .orderList_recent-order .orderList_table tbody tr td.edit {
+    padding-left: 5px;
+  }
+  .orderList_recent-order .orderList_table tbody tr .react-icons {
+    font-size: 17px;
+  }
+  .orderList_recent-order .orderList_table-cart {
+    display: none;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .orderList_recent-order {
+    margin: 25px 0 40px 0;
+    gap: 3px;
+  }
+  .orderList_recent-order h2 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .orderList_recent-order .orderList_table {
+    display: none;
+  }
+  .orderList_recent-order .orderList_table-cart {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    min-height: 200px;
+  }
+  .orderList_recent-order .orderList_table-cart .table_cart_item {
+    background-color: #fff;
+    padding: 20px 10px;
+    border-radius: 12px;
+    box-shadow: 0 32px 48px rgba(132, 139, 200, 0.18);
+    position: relative;
+    width: 100%;
+  }
+  .orderList_recent-order .orderList_table-cart .table_cart_item .table_cart_item_above {
+    width: 100%;
+    padding: 0 10px;
+    margin-bottom: 40px;
+  }
+  .orderList_recent-order .orderList_table-cart .table_cart_item .table_cart_item_above ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    gap: 2px;
+  }
+  .orderList_recent-order .orderList_table-cart .table_cart_item .table_cart_item_above ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .orderList_recent-order .orderList_table-cart .table_cart_item .table_cart_item_above ul li .status_span {
+    background-color: red;
+    padding: 1px 10px;
+    border-radius: 5px;
+    color: #fff;
+  }
+  .orderList_recent-order .orderList_table-cart .table_cart_item .table_cart_item_below {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #ffcc05;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .orderList_recent-order {
+    margin: 25px 0 40px 0;
+    gap: 3px;
+  }
+  .orderList_recent-order h2 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .orderList_recent-order .orderList_table {
+    display: none;
+  }
+  .orderList_recent-order .orderList_table-cart {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    min-height: 200px;
+  }
+  .orderList_recent-order .orderList_table-cart .table_cart_item {
+    background-color: #fff;
+    padding: 15px 1px;
+    border-radius: 12px;
+    box-shadow: 0 32px 48px rgba(132, 139, 200, 0.18);
+    position: relative;
+    width: 100%;
+  }
+  .orderList_recent-order .orderList_table-cart .table_cart_item .table_cart_item_above {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 17px;
+  }
+  .orderList_recent-order .orderList_table-cart .table_cart_item .table_cart_item_above ul {
+    gap: 1px;
+    list-style: none;
+  }
+  .orderList_recent-order .orderList_table-cart .table_cart_item .table_cart_item_above ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .orderList_recent-order .orderList_table-cart .table_cart_item .table_cart_item_above ul li h3 {
+    font-size: 13px;
+  }
+  .orderList_recent-order .orderList_table-cart .table_cart_item .table_cart_item_above ul li p {
+    font-size: 12px;
+  }
+  .orderList_recent-order .orderList_table-cart .table_cart_item .table_cart_item_above ul li .status_span {
+    background-color: red;
+    padding: 1px 8px;
+    border-radius: 5px;
+    color: #fff;
+  }
+  .orderList_recent-order .orderList_table-cart .table_cart_item .table_cart_item_below {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    background-color: #ffcc05;
+    padding: 6px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .orderList_recent-order .orderList_table-cart .table_cart_item .table_cart_item_below .react-icons {
+    font-size: 12px;
+  }
+}

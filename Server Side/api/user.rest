@@ -1,0 +1,49 @@
+@base_url = http://localhost:2030/api/v1
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MWVjMWUyZDExNDYyMzVmOWQzM2ExNSIsImlhdCI6MTcxMzU1MzM5MiwiZXhwIjoxNzEzODEyNTkyfQ.jVexhpgGP-VqsRXNEgdUtS7ZiljWPOOWOEcsGVs_8Ao
+
+
+### Create New User
+POST {{base_url}}/users/register
+Content-Type: application/json
+ 
+{ 
+    "username": "admin", 
+    "email":"admin@gmail.com",
+    "password": "12345"
+}
+
+
+
+### Login User
+POST {{base_url}}/users/login
+Content-Type: application/json
+ 
+{  
+    "email":"admin@gmail.com",
+    "password": "12345"
+}
+
+
+
+### Get User Profile
+GET {{base_url}}/users/profile
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+
+
+### Update Shipping Address All User
+PUT {{base_url}}/users/update
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "firstName": "Fuad",
+    "lastName": "Babayev",
+    "address": "Azerbijan/Baku",
+    "city": "Baku",
+    "postalCode": "AZ1129",
+    "province": "Ahkmadli",
+    "country": "Azerbaijan",
+    "phone": "+994707431951"
+}

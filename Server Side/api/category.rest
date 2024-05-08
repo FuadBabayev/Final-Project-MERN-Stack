@@ -1,0 +1,43 @@
+@base_url = http://localhost:2030/api/v1
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MWVjMWUyZDExNDYyMzVmOWQzM2ExNSIsImlhdCI6MTcxMzU1MzM5MiwiZXhwIjoxNzEzODEyNTkyfQ.jVexhpgGP-VqsRXNEgdUtS7ZiljWPOOWOEcsGVs_8Ao
+
+
+### Create New Category
+POST {{base_url}}/categories
+Content-Type: application/json
+Authorization: Bearer {{token}} 
+
+{
+    "name": "Men"
+}
+
+
+
+### Read All Categories
+GET {{base_url}}/categories
+Content-Type: application/json
+
+
+
+### Read Single Category
+GET {{base_url}}/categories/6620a49da6cab2dbba738ff4
+Content-Type: application/json
+
+
+
+
+### Update Category
+PUT {{base_url}}/categories/6620a49da6cab2dbba738ff4
+Content-Type: application/json
+Authorization: Bearer {{token}} 
+
+{
+    "name": "Women"
+}
+
+
+
+### Delete Category
+DELETE {{base_url}}/categories/66209dbc896d860c3a1893a0
+Content-Type: application/json
+Authorization: Bearer {{token}} 

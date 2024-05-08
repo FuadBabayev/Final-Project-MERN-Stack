@@ -1,0 +1,211 @@
+.user_statistics {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.user_statistics > div {
+  width: calc((100% - 75px) / 4);
+  padding: 30px 20px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+.user_statistics > div:hover {
+  box-shadow: none;
+  transform: translateY(3px);
+}
+.user_statistics .today_sales {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.user_statistics .today_sales .today_sales_head {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.user_statistics .today_sales .today_sales_head .today_sales_icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.user_statistics .today_sales .today_sales_head .today_sales_icon .react-icons {
+  color: #fff;
+  font-size: 30px;
+}
+.user_statistics .today_sales .today_sales_head .today_sales_icon.today_sale {
+  background-color: #7380ed;
+}
+.user_statistics .today_sales .today_sales_head .today_sales_icon.min_order {
+  background-color: #ff7782;
+}
+.user_statistics .today_sales .today_sales_head .today_sales_icon.max_order {
+  background-color: #41f1b6;
+}
+.user_statistics .today_sales .today_sales_head .today_sales_icon.total_sale {
+  background-color: #e1b42c;
+}
+.user_statistics .today_sales .today_sales_head h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #282828;
+}
+.user_statistics .today_sales.today_sale_border {
+  border: 4px dashed #7380ed;
+}
+.user_statistics .today_sales.min_order_border {
+  border: 4px dashed #ff7782;
+}
+.user_statistics .today_sales.max_order_border {
+  border: 4px dashed #41f1b6;
+}
+.user_statistics .today_sales.total_sale_border {
+  border: 4px dashed #e1b42c;
+}
+.user_statistics .today_sales .today_sales_foot h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #282828;
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1280px) {
+  .user_statistics {
+    height: 140px;
+    gap: 20px;
+  }
+  .user_statistics > div {
+    width: calc((100% - 60px) / 4);
+    padding: 12px 15px;
+  }
+  .user_statistics .today_sales {
+    gap: 15px;
+  }
+  .user_statistics .today_sales .today_sales_head {
+    gap: 20px;
+  }
+  .user_statistics .today_sales .today_sales_head .today_sales_icon {
+    width: 40px;
+    height: 40px;
+  }
+  .user_statistics .today_sales .today_sales_head .today_sales_icon .react-icons {
+    font-size: 26px;
+  }
+  .user_statistics .today_sales .today_sales_head h2 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .user_statistics .today_sales .today_sales_foot h3 {
+    font-size: 15px;
+    font-weight: 500;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .user_statistics {
+    height: 220px;
+    padding-bottom: 240px;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    row-gap: 20px;
+    margin-top: 20px;
+  }
+  .user_statistics > div {
+    width: calc((100% - 20px) / 2);
+    padding: 12px 15px;
+  }
+  .user_statistics .today_sales {
+    gap: 15px;
+  }
+  .user_statistics .today_sales .today_sales_head {
+    gap: 20px;
+  }
+  .user_statistics .today_sales .today_sales_head .today_sales_icon {
+    width: 40px;
+    height: 40px;
+  }
+  .user_statistics .today_sales .today_sales_head .today_sales_icon .react-icons {
+    font-size: 26px;
+  }
+  .user_statistics .today_sales .today_sales_head h2 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .user_statistics .today_sales .today_sales_foot h3 {
+    font-size: 15px;
+    font-weight: 500;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .user_statistics {
+    margin-top: 20px;
+    height: 220px;
+    padding-bottom: 500px;
+    gap: 20px;
+  }
+  .user_statistics > div {
+    width: 100%;
+    padding: 12px 15px;
+  }
+  .user_statistics .today_sales {
+    gap: 15px;
+  }
+  .user_statistics .today_sales .today_sales_head {
+    gap: 20px;
+  }
+  .user_statistics .today_sales .today_sales_head .today_sales_icon {
+    width: 40px;
+    height: 40px;
+  }
+  .user_statistics .today_sales .today_sales_head .today_sales_icon .react-icons {
+    font-size: 26px;
+  }
+  .user_statistics .today_sales .today_sales_head h2 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .user_statistics .today_sales .today_sales_foot h3 {
+    font-size: 15px;
+    font-weight: 500;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .user_statistics {
+    margin-top: 20px;
+    height: 220px;
+    padding-bottom: 440px;
+    gap: 20px;
+  }
+  .user_statistics > div {
+    width: 100%;
+    padding: 8px 15px;
+  }
+  .user_statistics .today_sales {
+    gap: 10px;
+  }
+  .user_statistics .today_sales .today_sales_head {
+    gap: 15px;
+  }
+  .user_statistics .today_sales .today_sales_head .today_sales_icon {
+    width: 40px;
+    height: 40px;
+  }
+  .user_statistics .today_sales .today_sales_head .today_sales_icon .react-icons {
+    font-size: 24px;
+  }
+  .user_statistics .today_sales .today_sales_head h2 {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .user_statistics .today_sales .today_sales_foot h3 {
+    font-size: 14px;
+    font-weight: 500;
+  }
+}

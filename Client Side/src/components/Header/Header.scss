@@ -1,0 +1,202 @@
+header {
+    background-color: #282828;
+
+        .coupon_part{
+            background-color: red;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            marquee{
+                font-size: 24px;
+                font-weight: 700;
+                color: #fff;
+                letter-spacing: 10px;
+            }
+        }
+    main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 35px;
+
+        .first-part,
+        .second-part {
+            display: flex;
+            gap: 30px;
+
+            .phone,
+            .email,
+            .sign-up,
+            .sign-in {
+                display: flex;
+                align-items: center;
+                // width: auto;
+                gap: 10px;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font: 400 16px "Poppins", sans-serif;
+                    transition: 0.5s;
+
+                    &:hover {
+                        color: #ffcc05;
+                    }
+                }
+            }
+        }
+
+        .react-icons {
+            color: #ffcc05;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width:992px) {
+    .header {
+        .coupon_part{
+            height: 30px;
+            h2{
+                font-size: 22px;
+                font-weight: 700;
+                letter-spacing: 9px;
+            }
+        }
+        main {
+            min-height: 30px;
+
+            .first-part,
+            .second-part {
+                gap: 25px;
+
+                .phone,
+                .email,
+                .sign-up,
+                .sign-in {
+                    gap: 8px;
+
+                    a {
+                        font-size: 15px;
+                    }
+                }
+            }
+
+            .react-icons {
+                font-size: 15px;
+            }
+        }
+    }
+
+}
+
+
+@media only screen and (min-width: 577px) and (max-width:768px) {
+    .header {
+        .coupon_part{
+            height: 25px;
+            marquee{
+                font-size: 20px;
+                font-weight: 700;
+                letter-spacing: 8px;
+            }
+        }
+        main {
+            min-height: 25px;
+
+            .first-part,
+            .second-part {
+                gap: 10px;
+
+                .phone,
+                .email,
+                .sign-up,
+                .sign-in {
+                    gap: 5px;
+
+                    a {
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            .react-icons {
+                font-size: 12px;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 425px) and (max-width: 576px) {
+    .header {
+        .coupon_part{
+            height: 23px;
+            marquee{
+                font-size: 19px;
+                font-weight: 700;
+                letter-spacing: 7px;
+            }
+        }
+        main {
+            min-height: 20px;
+
+            .first-part,
+            .second-part {
+                gap: 5px;
+
+                .phone,
+                .email,
+                .sign-up,
+                .sign-in {
+                    gap: 3px;
+
+                    a {
+                        font-size: 9px;
+                    }
+                }
+            }
+
+            .react-icons {
+                font-size: 9px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 424px){
+    .header {
+
+        .coupon_part{
+            height: 21px;
+            marquee{
+                font-size: 16px;
+                font-weight: 700;
+                letter-spacing: 6px;
+            }
+        }
+        main {
+            min-height: 18px;
+
+            .first-part,
+            .second-part {
+                gap: 3px;
+
+                .phone,
+                .email,
+                .sign-up,
+                .sign-in {
+                    gap: 2px;
+
+                    a {
+                        font-size: 6px;
+                    }
+                }
+            }
+
+            .react-icons {
+                font-size: 6px;
+            }
+        }
+    }
+}

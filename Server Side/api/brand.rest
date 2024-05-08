@@ -1,0 +1,42 @@
+@base_url = http://localhost:2030/api/v1
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MWVjMWUyZDExNDYyMzVmOWQzM2ExNSIsImlhdCI6MTcxMzU1MzM5MiwiZXhwIjoxNzEzODEyNTkyfQ.jVexhpgGP-VqsRXNEgdUtS7ZiljWPOOWOEcsGVs_8Ao
+
+
+### Create New Brand
+POST {{base_url}}/brands
+Content-Type: application/json
+Authorization: Bearer {{token}} 
+
+{
+    "name": "Nike"
+}
+
+
+
+### Read All Brands
+GET {{base_url}}/brands
+Content-Type: application/json
+
+
+
+### Read Single Brand
+GET {{base_url}}/brands/6620d539194c3f29cfe71760
+Content-Type: application/json
+
+
+
+### Update Brand
+PUT {{base_url}}/brands/6622d82595229f12945b4eaf
+Content-Type: application/json
+Authorization: Bearer {{token}} 
+
+{
+    "name": "Polo"
+}
+
+
+
+### Delete Brand
+DELETE {{base_url}}/brands/6622d82595229f12945b4eaf
+Content-Type: application/json
+Authorization: Bearer {{token}} 

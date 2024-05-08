@@ -1,0 +1,221 @@
+.addFeatures {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .addFeatures_links {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+
+        ul {
+            height: 50px;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            li {
+                height: 100%;
+
+                .links {
+                    background-color: #fff;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 8px;
+                    // padding: 10px 20px;
+                    height: 100%;
+                    border-radius: 12px;
+                    box-shadow: 0 32px 48px rgba(132, 139, 200, 0.18);
+                    transition: 0.4s;
+                    cursor: pointer;
+                    border: 1px solid #282828;
+
+                    .react-icons {
+                        font-size: 30px;
+                        margin-left: 12px;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: #282828;
+                        font-size: 18px;
+                        font-weight: 500;
+                        transition: 0.4s;
+                        width: 100%;
+                        height: 100%;
+                        padding: 0 1px;
+                        display: flex;
+                        align-items: center;
+
+                    }
+
+                    &:hover {
+                        background-color: #282828;
+                        color: #fff;
+
+                        a {
+                            color: #fff;
+                        }
+                    }
+
+                }
+
+                &:hover {
+
+                    .links {
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .addFeatures_outlet {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1280px) {
+    .addFeatures {
+
+        .addFeatures_links {
+            margin-top: 18px;
+
+            ul {
+                height: 40px;
+                gap: 18px;
+
+                li {
+                    height: 100%;
+
+                    .links {
+                        gap: 7px;
+
+                        .react-icons {
+                            font-size: 30px;
+                            margin-left: 10px;
+                        }
+
+                        a {
+                            font-size: 16px;
+                            font-weight: 500;
+
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width:992px) {
+    .addFeatures {
+
+        .addFeatures_links {
+            margin-top: 15px;
+
+            ul {
+                height: 38px;
+                gap: 8px;
+
+                li {
+                    height: 100%;
+
+                    .links {
+                        gap: 4px;
+
+                        .react-icons {
+                            font-size: 26px;
+                            margin-left: 5px;
+                        }
+
+                        a {
+                            font-size: 15px;
+                            font-weight: 500;
+
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width:768px) {
+    .addFeatures {
+
+        .addFeatures_links {
+            margin-top: 15px;
+
+            ul {
+                height: 38px;
+                gap: 8px;
+
+                li {
+                    height: 100%;
+
+                    .links {
+                        gap: 4px;
+
+                        .react-icons {
+                            font-size: 26px;
+                            margin-left: 5px;
+                        }
+
+                        a {
+                            font-size: 15px;
+                            font-weight: 500;
+
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .addFeatures {
+
+        .addFeatures_links {
+            margin-top: 15px;
+            margin-bottom: 15px;
+
+            ul {
+                height: 160px;
+                gap: 2px;
+                flex-direction: column;
+                width: 100%;
+
+                li {
+                    width: 50%;
+                    .links {
+                        gap: 4px;
+                        height: 50px;
+                        width: 100%;
+                        display: flex;
+                        .react-icons {
+                            font-size: 20px;
+                            margin-left: 5px;
+                        }
+
+                        a {
+                            font-size: 12px;
+                            font-weight: 500;
+                            width: 100%;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}

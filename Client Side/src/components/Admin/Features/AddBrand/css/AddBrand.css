@@ -1,0 +1,116 @@
+.addBrand {
+  padding: 50px 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.addBrand .addProduct-header h2 {
+  font-size: 34px;
+}
+.addBrand .addProduct-form {
+  width: 450px;
+}
+.addBrand .addProduct-form form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 32px 48px rgba(132, 139, 200, 0.18);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.addBrand .addProduct-form form label {
+  font-size: 16px;
+  font-weight: 500;
+}
+.addBrand .addProduct-form form input {
+  width: 100%;
+}
+.addBrand .addProduct-form form .name {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 4px;
+}
+.addBrand .addProduct-form form .name label {
+  font-size: 16px;
+  font-weight: 500;
+}
+.addBrand .addProduct-form form .name input {
+  min-height: 35px;
+  border-radius: 4px;
+  border: 1px solid #aeaeae;
+  transition: 0.3s;
+  outline: none;
+  padding: 0 10px;
+}
+.addBrand .addProduct-form form .button {
+  width: 100%;
+  height: 60px;
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.addBrand .addProduct-form form .button button {
+  background-color: #512da8;
+  color: #fff;
+  font-size: 16px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: 0.6s;
+  width: 100%;
+  height: 100%;
+}
+.addBrand .addProduct-form form .button button:hover {
+  background-color: #fff;
+  color: #512da8;
+  border: 1px solid #512da8;
+}
+.addBrand .addProduct-form form:hover {
+  box-shadow: none;
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1280px) {
+  .addBrand {
+    padding: 40px 80px;
+  }
+  .addBrand .addProduct-form {
+    width: 400px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .addBrand {
+    padding: 30px 60px;
+  }
+  .addBrand .addProduct-form {
+    width: 350px;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .addBrand {
+    padding: 20px 40px;
+  }
+  .addBrand .addProduct-form {
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .addBrand {
+    padding: 10px 0;
+    gap: 2px;
+  }
+  .addBrand .addProduct-header h2 {
+    width: 200px;
+  }
+  .addBrand .addProduct-form {
+    width: 250px;
+  }
+}

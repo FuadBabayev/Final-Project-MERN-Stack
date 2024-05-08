@@ -1,0 +1,489 @@
+.adminDashboard {
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+.adminDashboard aside {
+  width: 300px;
+  display: flex;
+  padding-top: 40px;
+  justify-content: center;
+  background-color: #282828;
+  position: relative;
+}
+.adminDashboard aside ul {
+  list-style: none;
+  width: 80%;
+}
+.adminDashboard aside ul li .links {
+  border-radius: 10px;
+  gap: 15px;
+  cursor: pointer;
+  margin: 10px auto;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  transition: 0.4s;
+}
+.adminDashboard aside ul li .links .react-icons {
+  font-size: 30px;
+  color: #fff;
+  margin-left: 15px;
+}
+.adminDashboard aside ul li .links a {
+  transition: 0.3s;
+  text-decoration: none;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.adminDashboard aside ul li:hover .links {
+  background-color: white;
+}
+.adminDashboard aside ul li:hover .links a {
+  transform: translateX(10px);
+  color: #282828;
+}
+.adminDashboard aside ul li:hover .links .react-icons {
+  color: #282828;
+}
+.adminDashboard aside .close {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+}
+.adminDashboard aside .close .react-times {
+  color: #fff;
+  font-size: 20px;
+}
+.adminDashboard .navbar-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: #282828;
+  display: none;
+}
+.adminDashboard .navbar-button .react-open {
+  font-size: 50px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.adminDashboard .react_outlet {
+  width: calc(100% - 300px);
+  overflow: auto;
+  padding: 20px 70px;
+  background-color: #f6f6f9;
+}
+.adminDashboard .react_outlet::-webkit-scrollbar {
+  width: 12px;
+}
+.adminDashboard .react_outlet::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.adminDashboard .react_outlet::-webkit-scrollbar-thumb {
+  background: #888;
+}
+.adminDashboard .react_outlet .user_profile {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.adminDashboard .react_outlet .user_profile .user_profile_picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #fff;
+  border: 3px solid #282828;
+}
+.adminDashboard .react_outlet .user_profile .user_profile_picture img {
+  width: 100%;
+}
+.adminDashboard .react_outlet .user_profile .user_profile_about {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.adminDashboard .react_outlet .user_profile .user_profile_about .user_profile_aboutAdmin p {
+  font-size: 22px;
+  font-weight: 600;
+}
+.adminDashboard .react_outlet .user_profile .user_profile_about .user_profile_aboutTime {
+  display: flex;
+  gap: 30px;
+}
+.adminDashboard .react_outlet .user_profile .user_profile_about .user_profile_aboutTime p {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  gap: 4px;
+}
+.adminDashboard .react_outlet .user_profile .user_profile_about .user_profile_aboutTime p span {
+  font-weight: 600;
+}
+.adminDashboard .react_outlet .user_profile .user_profile_about .user_profile_aboutTime p .react-icons {
+  font-size: 22px;
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1280px) {
+  .adminDashboard aside {
+    width: 250px;
+    padding-top: 35px;
+  }
+  .adminDashboard aside ul li .links {
+    gap: 10px;
+    margin: 9px auto;
+    border-radius: 8px;
+    height: 38px;
+  }
+  .adminDashboard aside ul li .links .react-icons {
+    font-size: 26px;
+    margin-left: 10px;
+  }
+  .adminDashboard aside ul li .links a {
+    font-size: 15px;
+    font-weight: 500;
+    width: 100%;
+    height: 100%;
+  }
+  .adminDashboard aside ul li:hover .links a {
+    transform: translateX(8px);
+  }
+  .adminDashboard .react_outlet {
+    width: calc(100% - 250px);
+    padding: 20px;
+  }
+  .adminDashboard .react_outlet .user_profile {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .adminDashboard .react_outlet .user_profile .user_profile_picture {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #fff;
+    border: 3px solid #282828;
+  }
+  .adminDashboard .react_outlet .user_profile .user_profile_picture img {
+    width: 100%;
+  }
+  .adminDashboard .react_outlet .user_profile .user_profile_about {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .adminDashboard .react_outlet .user_profile .user_profile_about .user_profile_aboutAdmin p {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .adminDashboard .react_outlet .user_profile .user_profile_about .user_profile_aboutTime {
+    display: flex;
+    gap: 15px;
+  }
+  .adminDashboard .react_outlet .user_profile .user_profile_about .user_profile_aboutTime p {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    gap: 3px;
+  }
+  .adminDashboard .react_outlet .user_profile .user_profile_about .user_profile_aboutTime p span {
+    font-weight: 600;
+  }
+  .adminDashboard .react_outlet .user_profile .user_profile_about .user_profile_aboutTime p .react-icons {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .adminDashboard aside {
+    width: 220px;
+    padding-top: 35px;
+  }
+  .adminDashboard aside ul li .links {
+    gap: 8px;
+    margin: 8px auto;
+    border-radius: 6px;
+    height: 35px;
+  }
+  .adminDashboard aside ul li .links .react-icons {
+    font-size: 22px;
+    margin-left: 8px;
+  }
+  .adminDashboard aside ul li .links a {
+    font-size: 13px;
+    font-weight: 400;
+    width: 100%;
+    height: 100%;
+  }
+  .adminDashboard aside ul li:hover .links a {
+    transform: translateX(6px);
+  }
+  .adminDashboard .react_outlet {
+    width: calc(100% - 220px);
+    padding: 20px;
+  }
+  .adminDashboard .react_outlet .user_profile {
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .adminDashboard .react_outlet .user_profile .user_profile_picture {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #fff;
+    border: 3px solid #282828;
+  }
+  .adminDashboard .react_outlet .user_profile .user_profile_picture img {
+    width: 100%;
+  }
+  .adminDashboard .react_outlet .user_profile .user_profile_about {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .adminDashboard .react_outlet .user_profile .user_profile_about .user_profile_aboutAdmin p {
+    font-size: 17px;
+    font-weight: 500;
+  }
+  .adminDashboard .react_outlet .user_profile .user_profile_about .user_profile_aboutTime {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .adminDashboard .react_outlet .user_profile .user_profile_about .user_profile_aboutTime p {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    gap: 3px;
+  }
+  .adminDashboard .react_outlet .user_profile .user_profile_about .user_profile_aboutTime p span {
+    font-weight: 500;
+  }
+  .adminDashboard .react_outlet .user_profile .user_profile_about .user_profile_aboutTime p .react-icons {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .adminDashboard aside {
+    width: 300px;
+    position: absolute;
+    left: -300px;
+    top: 0;
+    bottom: 0;
+    z-index: 3;
+    transition: 0.5s;
+  }
+  .adminDashboard aside ul li .links {
+    margin: 7px auto;
+    gap: 6px;
+    border-radius: 6px;
+    height: 36px;
+  }
+  .adminDashboard aside ul li .links .react-icons {
+    font-size: 28px;
+    margin-left: 7px;
+  }
+  .adminDashboard aside ul li .links a {
+    font-size: 17px;
+    font-weight: 400;
+    width: 100%;
+    height: 100%;
+  }
+  .adminDashboard aside ul li:hover .links a {
+    transform: translateX(8px);
+  }
+  .adminDashboard aside .close {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+  }
+  .adminDashboard aside .close .react-times {
+    color: #fff;
+    font-size: 25px;
+  }
+  .adminDashboard .navbar-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: #282828;
+    display: block;
+  }
+  .adminDashboard .navbar-button .react-open {
+    font-size: 50px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+  }
+  .adminDashboard .responsive {
+    transform: translateX(100%);
+  }
+  .adminDashboard .react_outlet {
+    width: 100%;
+  }
+  .adminDashboard .react_outlet .user_profile {
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .adminDashboard .react_outlet .user_profile .user_profile_picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #fff;
+    border: 3px solid #282828;
+  }
+  .adminDashboard .react_outlet .user_profile .user_profile_picture img {
+    width: 100%;
+  }
+  .adminDashboard .react_outlet .user_profile .user_profile_about {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .adminDashboard .react_outlet .user_profile .user_profile_about .user_profile_aboutAdmin p {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .adminDashboard .react_outlet .user_profile .user_profile_about .user_profile_aboutTime {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .adminDashboard .react_outlet .user_profile .user_profile_about .user_profile_aboutTime p {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    gap: 3px;
+  }
+  .adminDashboard .react_outlet .user_profile .user_profile_about .user_profile_aboutTime p span {
+    font-weight: 500;
+  }
+  .adminDashboard .react_outlet .user_profile .user_profile_about .user_profile_aboutTime p .react-icons {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .adminDashboard aside {
+    width: 100%;
+    position: absolute;
+    left: -100%;
+    top: 0;
+    bottom: 0;
+    z-index: 3;
+    transition: 0.5s;
+  }
+  .adminDashboard aside ul li .links {
+    margin: 10px auto;
+    gap: 8px;
+    border-radius: 6px;
+    height: 35px;
+  }
+  .adminDashboard aside ul li .links .react-icons {
+    font-size: 30px;
+    margin-left: 8px;
+  }
+  .adminDashboard aside ul li .links a {
+    font-size: 18px;
+    font-weight: 400;
+    width: 100%;
+    height: 100%;
+  }
+  .adminDashboard aside ul li:hover .links a {
+    transform: translateX(8px);
+  }
+  .adminDashboard aside .close {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+  }
+  .adminDashboard aside .close .react-times {
+    color: #fff;
+    font-size: 25px;
+  }
+  .adminDashboard .navbar-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: #282828;
+    display: block;
+  }
+  .adminDashboard .navbar-button .react-open {
+    font-size: 50px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+  }
+  .adminDashboard .responsive {
+    transform: translateX(100%);
+  }
+  .adminDashboard .react_outlet {
+    width: 100%;
+    padding: 10px 50px;
+  }
+  .adminDashboard .react_outlet .user_profile {
+    padding: 8px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .adminDashboard .react_outlet .user_profile .user_profile_picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #fff;
+    border: 3px solid #282828;
+  }
+  .adminDashboard .react_outlet .user_profile .user_profile_picture img {
+    width: 100%;
+  }
+  .adminDashboard .react_outlet .user_profile .user_profile_about {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .adminDashboard .react_outlet .user_profile .user_profile_about .user_profile_aboutAdmin p {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .adminDashboard .react_outlet .user_profile .user_profile_about .user_profile_aboutTime {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .adminDashboard .react_outlet .user_profile .user_profile_about .user_profile_aboutTime p {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    gap: 3px;
+  }
+  .adminDashboard .react_outlet .user_profile .user_profile_about .user_profile_aboutTime p span {
+    font-weight: 500;
+  }
+  .adminDashboard .react_outlet .user_profile .user_profile_about .user_profile_aboutTime p .react-icons {
+    font-size: 16px;
+  }
+}

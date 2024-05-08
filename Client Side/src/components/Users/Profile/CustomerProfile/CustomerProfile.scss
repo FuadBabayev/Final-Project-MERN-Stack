@@ -1,0 +1,543 @@
+.customerProfile {
+    background-color: whitesmoke;
+    table {
+        width: 80%;
+        padding: 30px 0;
+        margin: 0 auto;
+
+        th,
+        td {
+            text-align: left;
+
+            &:nth-last-child(1) {
+                text-align: right;
+            }
+        }
+
+        th {
+            p {
+                font-size: 15px;
+                font-weight: 600;
+
+                span {
+                    font-weight: 800;
+                }
+            }
+        }
+
+        td {
+            p {
+                font-size: 13px;
+                font-weight: 400;
+            }
+        }
+
+        .order {
+            width: 14%;
+        }
+
+        .date {
+            width: 14%;
+        }
+
+        .amount {
+            width: 26%;
+        }
+
+        .status {
+            width: 23%;
+        }
+
+        .method {
+            width: 23%;
+        }
+    }
+
+    .table_cart {
+        display: none;
+    }
+
+    .customerProfile_ordered_cart {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 60px 0;
+        gap: 30px;
+
+        .myOrders {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 32px 48px rgba(132, 139, 200, 0.18);
+            width: 70%;
+            display: flex;
+            gap: 20px;
+            position: relative;
+
+            .myOrders_image {
+                width: 20%;
+                height: 200px;
+                border-radius: 15px;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .myOrders_description {
+                width: 80%;
+                padding-top: 20px;
+
+                h2 {
+                    font-size: 22px;
+                    font-weight: 600;
+
+                    span {
+                        font-weight: 500;
+                    }
+                }
+
+                h3 {
+                    font-size: 20px;
+                    font-weight: 600;
+
+                    span {
+                        font-weight: 600;
+                    }
+                }
+
+                p {
+                    font-size: 16px;
+                    line-height: 18px;
+                    margin-top: 12px;
+                    width: 97%;
+                    text-align: justify;
+                }
+            }
+
+            .myOrders_payment_status {
+                position: absolute;
+                top: 10%;
+                right: 4%;
+                transform: translate(-4%, -10%);
+                display: flex;
+                align-items: center;
+
+                .react-icons {
+                    font-size: 24px;
+                    margin-right: 7px;
+                    color: red;
+                }
+
+                span {
+                    font-weight: 600;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 993px) and (max-width: 1280px) {
+    .customerProfile {
+
+        table {
+
+
+            th {
+                p {
+                    font-size: 14px;
+                    font-weight: 600;
+
+                    span {
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            td {
+                p {
+                    font-size: 12px;
+                    font-weight: 400;
+                }
+            }
+
+            .order {
+                width: 15%;
+            }
+
+            .date {
+                width: 15%;
+            }
+
+            .amount {
+                width: 25%;
+            }
+
+            .status {
+                width: 23%;
+            }
+
+            .method {
+                width: 22%;
+            }
+        }
+
+        .table_cart {
+            display: none;
+        }
+
+        .customerProfile_ordered_cart {
+
+            .myOrders {
+
+                .myOrders_image {
+                    width: 30%;
+                    height: 200px;
+                }
+
+                .myOrders_description {
+                    width: 70%;
+
+                    h2 {
+                        font-size: 21px;
+                    }
+
+                    h3 {
+                        font-size: 19px;
+                    }
+
+                    p {
+                        font-size: 14px;
+                        line-height: 16px;
+                        margin-top: 10px;
+                        width: 98%;
+                    }
+                }
+
+                .myOrders_payment_status {
+                    position: absolute;
+                    top: 10%;
+                    right: 4%;
+                    transform: translate(-4%, -10%);
+                    display: flex;
+                    align-items: center;
+
+                    .react-icons {
+                        font-size: 24px;
+                        margin-right: 7px;
+                        color: red;
+                    }
+
+                    span {
+                        font-weight: 600;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width:992px) {
+    .customerProfile {
+
+        table {
+            width: 85%;
+
+            th {
+                p {
+                    font-size: 13px;
+                    font-weight: 500;
+
+                    span {
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            td {
+                p {
+                    font-size: 12px;
+                    font-weight: 400;
+                }
+            }
+
+            .order {
+                width: 16%;
+            }
+
+            .date {
+                width: 16%;
+            }
+
+            .amount {
+                width: 24%;
+            }
+
+            .status {
+                width: 22%;
+            }
+
+            .method {
+                width: 22%;
+            }
+        }
+
+        .table_cart {
+            display: none;
+        }
+
+        .customerProfile_ordered_cart {
+
+            .myOrders {
+                width: 80%;
+
+                .myOrders_image {
+                    width: 35%;
+                    height: 200px;
+                }
+
+                .myOrders_description {
+                    width: 65%;
+                    padding-top: 20px;
+
+                    h2 {
+                        font-size: 20px;
+                        font-weight: 600;
+                        margin-top: 10px;
+                        margin-bottom: -7px;
+
+                        span {
+                            font-weight: 500;
+                        }
+                    }
+
+                    h3 {
+                        font-size: 18px;
+                        font-weight: 600;
+
+                        span {
+                            font-weight: 600;
+                        }
+                    }
+
+                    p {
+                        font-size: 15px;
+                        line-height: 17px;
+                    }
+                }
+
+                .myOrders_payment_status {
+                    font-size: 16px;
+
+                    .react-icons {
+                        font-size: 20px;
+                        margin-right: 5px;
+                    }
+
+                    span {
+                        font-weight: 600;
+                        margin-left: 7px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width:768px) {
+    .customerProfile {
+        table {
+            display: none;
+        }
+
+        .table_cart {
+            display: block;
+            padding: 30px 0;
+
+            .table_cart_lists {
+                list-style: none;
+
+                li {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 70%;
+                    margin: 0 auto;
+                    height: 25px;
+
+                    h3 {
+                        font-size: 18px;
+                        font-weight: 700;
+                    }
+
+                    p {
+                        font-size: 18px;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+
+        .customerProfile_ordered_cart {
+
+            .myOrders {
+                padding: 10px;
+                border-radius: 15px;
+                width: 85%;
+                gap: 20px;
+
+                .myOrders_image {
+                    width: 35%;
+                    height: 200px;
+                    border-radius: 15px;
+                    overflow: hidden;
+                    background-color: red;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .myOrders_description {
+                    width: 65%;
+                    padding-top: 30px;
+
+                    h2 {
+                        font-size: 18px;
+                        font-weight: 600;
+                        margin-top: 10px;
+                        margin-bottom: -5px;
+                    }
+
+                    h3 {
+                        font-size: 17px;
+                        font-weight: 600;
+                    }
+
+                    p {
+                        font-size: 14px;
+                        line-height: 16px;
+                        margin-top: 10px;
+                        width: 97%;
+                    }
+                }
+
+                .myOrders_payment_status {
+                    font-size: 14px;
+
+                    .react-icons {
+                        font-size: 20px;
+                        margin-right: 3px;
+                        color: red;
+                    }
+
+                    span {
+                        font-weight: 600;
+                        margin-left: 3px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+    .customerProfile {
+        table {
+            display: none;
+        }
+
+        .table_cart {
+            display: block;
+            padding: 30px 0;
+
+            .table_cart_lists {
+                list-style: none;
+
+                li {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 80%;
+                    margin: 0 auto;
+                    height: 20px;
+
+                    h3 {
+                        font-size: 16px;
+                        font-weight: 600;
+                    }
+
+                    p {
+                        font-size: 13px;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+
+        .customerProfile_ordered_cart {
+
+            .myOrders {
+                padding: 20px;
+                border-radius: 10px;
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+
+                .myOrders_image {
+                    width: 100%;
+                    height: 250px;
+                    border-radius: 15px;
+                    overflow: hidden;
+                    margin-top: 30px;
+                }
+
+                .myOrders_description {
+                    width: 100%;
+                    padding-top: 1px;
+
+                    h2 {
+                        font-size: 25px;
+                        font-weight: 600;
+                        margin-bottom: -7px;
+                    }
+
+                    p {
+                        font-size: 14px;
+                        line-height: 16px;
+                        margin-top: 8px;
+                        width: 100%;
+                    }
+                }
+
+                .myOrders_payment_status {
+                    position: absolute;
+                    top: 4%;
+                    right: 4%;
+                    transform: translate(-4%, -4%);
+                    display: flex;
+                    align-items: center;
+
+                    .react-icons {
+                        font-size: 24px;
+                        margin-right: 7px;
+                        color: red;
+                    }
+
+                    span {
+                        font-weight: 600;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

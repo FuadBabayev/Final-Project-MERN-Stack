@@ -1,0 +1,165 @@
+.addFeatures {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.addFeatures .addFeatures_links {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.addFeatures .addFeatures_links ul {
+  height: 50px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.addFeatures .addFeatures_links ul li {
+  height: 100%;
+}
+.addFeatures .addFeatures_links ul li .links {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 100%;
+  border-radius: 12px;
+  box-shadow: 0 32px 48px rgba(132, 139, 200, 0.18);
+  transition: 0.4s;
+  cursor: pointer;
+  border: 1px solid #282828;
+}
+.addFeatures .addFeatures_links ul li .links .react-icons {
+  font-size: 30px;
+  margin-left: 12px;
+}
+.addFeatures .addFeatures_links ul li .links a {
+  text-decoration: none;
+  color: #282828;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.4s;
+  width: 100%;
+  height: 100%;
+  padding: 0 1px;
+  display: flex;
+  align-items: center;
+}
+.addFeatures .addFeatures_links ul li .links:hover {
+  background-color: #282828;
+  color: #fff;
+}
+.addFeatures .addFeatures_links ul li .links:hover a {
+  color: #fff;
+}
+.addFeatures .addFeatures_links ul li:hover .links {
+  box-shadow: none;
+}
+.addFeatures .addFeatures_outlet {
+  width: 100%;
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1280px) {
+  .addFeatures .addFeatures_links {
+    margin-top: 18px;
+  }
+  .addFeatures .addFeatures_links ul {
+    height: 40px;
+    gap: 18px;
+  }
+  .addFeatures .addFeatures_links ul li {
+    height: 100%;
+  }
+  .addFeatures .addFeatures_links ul li .links {
+    gap: 7px;
+  }
+  .addFeatures .addFeatures_links ul li .links .react-icons {
+    font-size: 30px;
+    margin-left: 10px;
+  }
+  .addFeatures .addFeatures_links ul li .links a {
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .addFeatures .addFeatures_links {
+    margin-top: 15px;
+  }
+  .addFeatures .addFeatures_links ul {
+    height: 38px;
+    gap: 8px;
+  }
+  .addFeatures .addFeatures_links ul li {
+    height: 100%;
+  }
+  .addFeatures .addFeatures_links ul li .links {
+    gap: 4px;
+  }
+  .addFeatures .addFeatures_links ul li .links .react-icons {
+    font-size: 26px;
+    margin-left: 5px;
+  }
+  .addFeatures .addFeatures_links ul li .links a {
+    font-size: 15px;
+    font-weight: 500;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .addFeatures .addFeatures_links {
+    margin-top: 15px;
+  }
+  .addFeatures .addFeatures_links ul {
+    height: 38px;
+    gap: 8px;
+  }
+  .addFeatures .addFeatures_links ul li {
+    height: 100%;
+  }
+  .addFeatures .addFeatures_links ul li .links {
+    gap: 4px;
+  }
+  .addFeatures .addFeatures_links ul li .links .react-icons {
+    font-size: 26px;
+    margin-left: 5px;
+  }
+  .addFeatures .addFeatures_links ul li .links a {
+    font-size: 15px;
+    font-weight: 500;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .addFeatures .addFeatures_links {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .addFeatures .addFeatures_links ul {
+    height: 160px;
+    gap: 2px;
+    flex-direction: column;
+    width: 100%;
+  }
+  .addFeatures .addFeatures_links ul li {
+    width: 50%;
+  }
+  .addFeatures .addFeatures_links ul li .links {
+    gap: 4px;
+    height: 50px;
+    width: 100%;
+    display: flex;
+  }
+  .addFeatures .addFeatures_links ul li .links .react-icons {
+    font-size: 20px;
+    margin-left: 5px;
+  }
+  .addFeatures .addFeatures_links ul li .links a {
+    font-size: 12px;
+    font-weight: 500;
+    width: 100%;
+  }
+}

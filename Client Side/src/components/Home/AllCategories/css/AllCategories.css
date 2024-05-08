@@ -1,0 +1,168 @@
+.allCategories {
+  padding: 10px 0 80px;
+  background-color: whitesmoke;
+}
+.allCategories h2 {
+  color: #282828;
+  font-size: 25px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+.allCategories h2 .product_list_count {
+  background-color: red;
+  padding: 2px 12px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+.allCategories .product_list_prologue {
+  margin-bottom: 50px;
+  margin-top: -4px;
+  font-size: 18px;
+}
+.allCategories .homeProductTrending_carts {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.allCategories .homeProductTrending_carts .trending_cart {
+  height: 340px;
+  width: calc((100% - 80px) / 5);
+  border-radius: 10px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  overflow: hidden;
+}
+.allCategories .homeProductTrending_carts .trending_cart a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: #282828;
+  position: relative;
+}
+.allCategories .homeProductTrending_carts .trending_cart a .trending_cart_upper {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  /* border-radius: 10px; */
+}
+.allCategories .homeProductTrending_carts .trending_cart a .trending_cart_upper img {
+  width: 100%;
+  height: 100%;
+  transition: 1.2s;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 10px;
+}
+.allCategories .homeProductTrending_carts .trending_cart a .trending_cart_lower {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -5%);
+  padding: 10px;
+  color: #282828;
+  width: 100%;
+  background-color: rgba(40, 40, 40, 0.5);
+}
+.allCategories .homeProductTrending_carts .trending_cart a .trending_cart_lower p {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 24px;
+}
+.allCategories .homeProductTrending_carts .trending_cart:hover a .trending_cart_upper img {
+  transform: scale(1.1);
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1280px) {
+  .allCategories .homeProductTrending_carts {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .allCategories .homeProductTrending_carts .trending_cart {
+    height: 320px;
+    width: calc((100% - 60px) / 4);
+  }
+  .allCategories .homeProductTrending_carts .trending_cart a .trending_cart_lower p {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 22px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .allCategories .homeProductTrending_carts {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .allCategories .homeProductTrending_carts .trending_cart {
+    height: 280px;
+    width: calc((100% - 40px) / 3);
+  }
+  .allCategories .homeProductTrending_carts .trending_cart a .trending_cart_lower p {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .allCategories h2 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .allCategories h2 .product_list_count {
+    font-size: 16px;
+  }
+  .allCategories .product_list_prologue {
+    font-size: 17px;
+  }
+  .allCategories .homeProductTrending_carts {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .allCategories .homeProductTrending_carts .trending_cart {
+    height: 340px;
+    width: calc((100% - 20px) / 2);
+  }
+  .allCategories .homeProductTrending_carts .trending_cart a .trending_cart_lower p {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 22px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .allCategories h2 {
+    font-size: 25px;
+    font-weight: 700;
+  }
+  .allCategories h2 .product_list_count {
+    padding: 2px 8px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 15px;
+  }
+  .allCategories .product_list_prologue {
+    margin-bottom: 50px;
+    margin-top: 4px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .allCategories .homeProductTrending_carts .trending_cart {
+    height: 430px;
+    width: 100%;
+  }
+  .allCategories .homeProductTrending_carts .trending_cart a .trending_cart_lower p {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 22px;
+  }
+}

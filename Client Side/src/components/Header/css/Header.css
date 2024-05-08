@@ -1,0 +1,228 @@
+header {
+  background-color: #282828;
+}
+header .coupon_part {
+  background-color: red;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .coupon_part marquee {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 10px;
+}
+header main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 35px;
+}
+header main .first-part,
+header main .second-part {
+  display: flex;
+  gap: 30px;
+}
+header main .first-part .phone,
+header main .first-part .email,
+header main .first-part .sign-up,
+header main .first-part .sign-in,
+header main .second-part .phone,
+header main .second-part .email,
+header main .second-part .sign-up,
+header main .second-part .sign-in {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+header main .first-part .phone a,
+header main .first-part .email a,
+header main .first-part .sign-up a,
+header main .first-part .sign-in a,
+header main .second-part .phone a,
+header main .second-part .email a,
+header main .second-part .sign-up a,
+header main .second-part .sign-in a {
+  text-decoration: none;
+  color: white;
+  font: 400 16px "Poppins", sans-serif;
+  transition: 0.5s;
+}
+header main .first-part .phone a:hover,
+header main .first-part .email a:hover,
+header main .first-part .sign-up a:hover,
+header main .first-part .sign-in a:hover,
+header main .second-part .phone a:hover,
+header main .second-part .email a:hover,
+header main .second-part .sign-up a:hover,
+header main .second-part .sign-in a:hover {
+  color: #ffcc05;
+}
+header main .react-icons {
+  color: #ffcc05;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .header .coupon_part {
+    height: 30px;
+  }
+  .header .coupon_part h2 {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 9px;
+  }
+  .header main {
+    min-height: 30px;
+  }
+  .header main .first-part,
+  .header main .second-part {
+    gap: 25px;
+  }
+  .header main .first-part .phone,
+  .header main .first-part .email,
+  .header main .first-part .sign-up,
+  .header main .first-part .sign-in,
+  .header main .second-part .phone,
+  .header main .second-part .email,
+  .header main .second-part .sign-up,
+  .header main .second-part .sign-in {
+    gap: 8px;
+  }
+  .header main .first-part .phone a,
+  .header main .first-part .email a,
+  .header main .first-part .sign-up a,
+  .header main .first-part .sign-in a,
+  .header main .second-part .phone a,
+  .header main .second-part .email a,
+  .header main .second-part .sign-up a,
+  .header main .second-part .sign-in a {
+    font-size: 15px;
+  }
+  .header main .react-icons {
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .header .coupon_part {
+    height: 25px;
+  }
+  .header .coupon_part marquee {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 8px;
+  }
+  .header main {
+    min-height: 25px;
+  }
+  .header main .first-part,
+  .header main .second-part {
+    gap: 10px;
+  }
+  .header main .first-part .phone,
+  .header main .first-part .email,
+  .header main .first-part .sign-up,
+  .header main .first-part .sign-in,
+  .header main .second-part .phone,
+  .header main .second-part .email,
+  .header main .second-part .sign-up,
+  .header main .second-part .sign-in {
+    gap: 5px;
+  }
+  .header main .first-part .phone a,
+  .header main .first-part .email a,
+  .header main .first-part .sign-up a,
+  .header main .first-part .sign-in a,
+  .header main .second-part .phone a,
+  .header main .second-part .email a,
+  .header main .second-part .sign-up a,
+  .header main .second-part .sign-in a {
+    font-size: 12px;
+  }
+  .header main .react-icons {
+    font-size: 12px;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 576px) {
+  .header .coupon_part {
+    height: 23px;
+  }
+  .header .coupon_part marquee {
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: 7px;
+  }
+  .header main {
+    min-height: 20px;
+  }
+  .header main .first-part,
+  .header main .second-part {
+    gap: 5px;
+  }
+  .header main .first-part .phone,
+  .header main .first-part .email,
+  .header main .first-part .sign-up,
+  .header main .first-part .sign-in,
+  .header main .second-part .phone,
+  .header main .second-part .email,
+  .header main .second-part .sign-up,
+  .header main .second-part .sign-in {
+    gap: 3px;
+  }
+  .header main .first-part .phone a,
+  .header main .first-part .email a,
+  .header main .first-part .sign-up a,
+  .header main .first-part .sign-in a,
+  .header main .second-part .phone a,
+  .header main .second-part .email a,
+  .header main .second-part .sign-up a,
+  .header main .second-part .sign-in a {
+    font-size: 9px;
+  }
+  .header main .react-icons {
+    font-size: 9px;
+  }
+}
+@media only screen and (max-width: 424px) {
+  .header .coupon_part {
+    height: 21px;
+  }
+  .header .coupon_part marquee {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 6px;
+  }
+  .header main {
+    min-height: 18px;
+  }
+  .header main .first-part,
+  .header main .second-part {
+    gap: 3px;
+  }
+  .header main .first-part .phone,
+  .header main .first-part .email,
+  .header main .first-part .sign-up,
+  .header main .first-part .sign-in,
+  .header main .second-part .phone,
+  .header main .second-part .email,
+  .header main .second-part .sign-up,
+  .header main .second-part .sign-in {
+    gap: 2px;
+  }
+  .header main .first-part .phone a,
+  .header main .first-part .email a,
+  .header main .first-part .sign-up a,
+  .header main .first-part .sign-in a,
+  .header main .second-part .phone a,
+  .header main .second-part .email a,
+  .header main .second-part .sign-up a,
+  .header main .second-part .sign-in a {
+    font-size: 6px;
+  }
+  .header main .react-icons {
+    font-size: 6px;
+  }
+}

@@ -1,0 +1,23 @@
+.swiper {
+  width: 100%;
+  height: 250px;
+  user-select: none;
+  padding-top: 45px;
+  background-color: #fff;
+}
+
+.swiper-slide {
+  width: 300px;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+  height: 160px;
+  margin-left: 30px;
+  border: 3px solid #282828;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+}

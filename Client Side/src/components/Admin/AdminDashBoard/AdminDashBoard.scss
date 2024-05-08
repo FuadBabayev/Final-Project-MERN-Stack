@@ -1,0 +1,664 @@
+.adminDashboard {
+    // height: 100vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+
+    aside {
+        width: 300px;
+        display: flex;
+        padding-top: 40px;
+        justify-content: center;
+        background-color: #282828;
+        position: relative;
+
+
+        ul {
+            list-style: none;
+            width: 80%;
+
+            li {
+                .links {
+                    border-radius: 10px;
+                    gap: 15px;
+                    cursor: pointer;
+                    margin: 10px auto;
+                    // padding: 5px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    transition: 0.4s;
+
+                    .react-icons {
+                        font-size: 30px;
+                        color: #fff;
+                        margin-left: 15px;
+                    }
+
+                    a {
+                        transition: 0.3s;
+                        text-decoration: none;
+                        font-size: 16px;
+                        color: #fff;
+                        font-weight: 500;
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+
+
+
+                &:hover {
+                    .links {
+                        background-color: white;
+
+                        a {
+                            transform: translateX(10px);
+                            color: #282828;
+                        }
+
+                        .react-icons {
+                            color: #282828;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .close {
+            display: none;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            padding: 10px;
+
+            .react-times {
+                color: #fff;
+                font-size: 20px;
+            }
+        }
+    }
+
+    .navbar-button {
+        cursor: pointer;
+        border: none;
+        outline: none;
+        color: #282828;
+        display: none;
+
+        .react-open {
+            font-size: 50px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+    }
+
+    .react_outlet {
+        width: calc(100% - 300px);
+        overflow: auto;
+        padding: 20px 70px;
+        background-color: #f6f6f9;
+
+
+        &::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+
+        // Admin Dashboar Main Part
+        .user_profile {
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            gap: 25px;
+
+            .user_profile_picture {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                overflow: hidden;
+                background-color: #fff;
+                border: 3px solid #282828;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .user_profile_about {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+                .user_profile_aboutAdmin {
+                    p {
+                        font-size: 22px;
+                        font-weight: 600;
+                    }
+                }
+
+                .user_profile_aboutTime {
+                    display: flex;
+                    gap: 30px;
+
+                    p {
+                        display: flex;
+                        align-items: center;
+                        font-size: 16px;
+                        gap: 4px;
+
+                        span {
+                            font-weight: 600;
+                        }
+
+                        .react-icons {
+                            font-size: 22px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1280px) {
+    .adminDashboard {
+
+        aside {
+            width: 250px;
+            padding-top: 35px;
+
+            ul {
+
+                li {
+                    .links {
+                        gap: 10px;
+                        margin: 9px auto;
+                        border-radius: 8px;
+                        height: 38px;
+
+                        .react-icons {
+                            font-size: 26px;
+                            margin-left: 10px;
+                        }
+
+                        a {
+                            font-size: 15px;
+                            font-weight: 500;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+
+                    &:hover {
+                        .links {
+                            a {
+                                transform: translateX(8px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .react_outlet {
+            width: calc(100% - 250px);
+            padding: 20px;
+
+            .user_profile {
+                padding: 10px 0;
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+                .user_profile_picture {
+                    width: 90px;
+                    height: 90px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    background-color: #fff;
+                    border: 3px solid #282828;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .user_profile_about {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+
+                    .user_profile_aboutAdmin {
+                        p {
+                            font-size: 20px;
+                            font-weight: 500;
+                        }
+                    }
+
+                    .user_profile_aboutTime {
+                        display: flex;
+                        gap: 15px;
+
+                        p {
+                            display: flex;
+                            align-items: center;
+                            font-size: 14px;
+                            gap: 3px;
+
+                            span {
+                                font-weight: 600;
+                            }
+
+                            .react-icons {
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width:992px) {
+    .adminDashboard {
+
+        aside {
+            width: 220px;
+            padding-top: 35px;
+
+            ul {
+
+                li {
+                    .links {
+                        gap: 8px;
+                        margin: 8px auto;
+                        border-radius: 6px;
+                        height: 35px;
+
+                        .react-icons {
+                            font-size: 22px;
+                            margin-left: 8px;
+                        }
+
+                        a {
+                            font-size: 13px;
+                            font-weight: 400;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+
+                    &:hover {
+                        .links {
+
+                            a {
+                                transform: translateX(6px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .react_outlet {
+            width: calc(100% - 220px);
+            padding: 20px;
+
+
+            .user_profile {
+                padding: 8px 0;
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+                .user_profile_picture {
+                    width: 90px;
+                    height: 90px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    background-color: #fff;
+                    border: 3px solid #282828;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .user_profile_about {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+
+                    .user_profile_aboutAdmin {
+                        p {
+                            font-size: 17px;
+                            font-weight: 500;
+                        }
+                    }
+
+                    .user_profile_aboutTime {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5px;
+
+                        p {
+                            display: flex;
+                            align-items: center;
+                            font-size: 12px;
+                            gap: 3px;
+
+                            span {
+                                font-weight: 500;
+                            }
+
+                            .react-icons {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width:768px) {
+    .adminDashboard {
+        // height: 100vh;
+
+        aside {
+            width: 300px;
+            position: absolute;
+            left: -300px;
+            top: 0;
+            bottom: 0;
+            z-index: 3;
+            transition: 0.5s;
+
+            ul {
+
+                li {
+                    .links {
+                        margin: 7px auto;
+                        gap: 6px;
+                        border-radius: 6px;
+                        height: 36px;
+
+                        .react-icons {
+                            font-size: 28px;
+                            margin-left: 7px;
+                        }
+
+                        a {
+                            font-size: 17px;
+                            font-weight: 400;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+
+                    &:hover {
+                        .links {
+                            a {
+                                transform: translateX(8px);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .close {
+                display: block;
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                padding: 10px;
+
+                .react-times {
+                    color: #fff;
+                    font-size: 25px;
+                }
+            }
+        }
+
+        .navbar-button {
+            cursor: pointer;
+            border: none;
+            outline: none;
+            color: #282828;
+            display: block;
+
+            .react-open {
+                font-size: 50px;
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                z-index: 2;
+            }
+        }
+
+        .responsive {
+            transform: translateX(100%);
+        }
+
+        .react_outlet {
+            width: 100%;
+
+            .user_profile {
+                padding: 8px 0;
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+                .user_profile_picture {
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    background-color: #fff;
+                    border: 3px solid #282828;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .user_profile_about {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4px;
+
+                    .user_profile_aboutAdmin {
+                        p {
+                            font-size: 16px;
+                            font-weight: 500;
+                        }
+                    }
+
+                    .user_profile_aboutTime {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 4px;
+
+                        p {
+                            display: flex;
+                            align-items: center;
+                            font-size: 12px;
+                            gap: 3px;
+
+                            span {
+                                font-weight: 500;
+                            }
+
+                            .react-icons {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .adminDashboard {
+        // height: 100vh;
+
+        aside {
+            width: 100%;
+            position: absolute;
+            left: -100%;
+            top: 0;
+            bottom: 0;
+            z-index: 3;
+            transition: 0.5s;
+
+            ul {
+
+                li {
+                    .links {
+                        margin: 10px auto;
+                        gap: 8px;
+                        border-radius: 6px;
+                        height: 35px;
+
+                        .react-icons {
+                            font-size: 30px;
+                            margin-left: 8px;
+
+                        }
+
+                        a {
+                            font-size: 18px;
+
+                            font-weight: 400;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+
+                    &:hover {
+                        .links {
+                            a {
+                                transform: translateX(8px);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .close {
+                display: block;
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                padding: 10px;
+
+                .react-times {
+                    color: #fff;
+                    font-size: 25px;
+                }
+            }
+        }
+
+        .navbar-button {
+            cursor: pointer;
+            border: none;
+            outline: none;
+            color: #282828;
+            display: block;
+
+            .react-open {
+                font-size: 50px;
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                z-index: 2;
+            }
+        }
+
+        .responsive {
+            transform: translateX(100%);
+        }
+
+        .react_outlet {
+            width: 100%;
+            padding: 10px 50px;
+
+            .user_profile {
+                padding: 8px 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+
+                .user_profile_picture {
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    background-color: #fff;
+                    border: 3px solid #282828;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .user_profile_about {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4px;
+
+                    .user_profile_aboutAdmin {
+                        p {
+                            font-size: 16px;
+                            font-weight: 500;
+                        }
+                    }
+
+                    .user_profile_aboutTime {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 4px;
+
+                        p {
+                            display: flex;
+                            align-items: center;
+                            font-size: 12px;
+                            gap: 3px;
+
+                            span {
+                                font-weight: 500;
+                            }
+
+                            .react-icons {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

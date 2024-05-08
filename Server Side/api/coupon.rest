@@ -1,0 +1,50 @@
+@base_url = http://localhost:2030/api/v1
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MWVjMWUyZDExNDYyMzVmOWQzM2ExNSIsImlhdCI6MTcxMzU1MzM5MiwiZXhwIjoxNzEzODEyNTkyfQ.jVexhpgGP-VqsRXNEgdUtS7ZiljWPOOWOEcsGVs_8Ao
+
+
+### Create New Coupon
+POST {{base_url}}/coupons
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "code": "Ramadan",
+    "discount": 55,
+    "startDate": "04-25-2024",
+    "endDate": "04-28-2024"
+}
+
+
+
+### Read All Coupons
+GET {{base_url}}/coupons
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+
+
+### Read Single Coupon
+GET {{base_url}}/coupons/single
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+
+
+### Update Coupon
+PUT {{base_url}}/coupons/6622830a891ee628f8177da3
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "code": "ramadan",
+    "discount": 75,
+    "startDate": "04-20-2024",
+    "endDate": "04-23-2024"
+}
+
+
+
+### Delete Coupon
+DELETE {{base_url}}/coupons/6622830a891ee628f8177da3
+Content-Type: application/json
+Authorization: Bearer {{token}}

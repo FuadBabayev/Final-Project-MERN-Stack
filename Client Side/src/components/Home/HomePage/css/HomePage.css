@@ -1,0 +1,609 @@
+.homepage .homepage_first_page {
+  background-image: url("/images/homepage.webp");
+  background-size: cover;
+  background-position: right;
+  height: calc(100vh - 123px);
+  position: relative;
+}
+.homepage .homepage_first_page .writing {
+  width: 45%;
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translate(-15%, -50%);
+}
+.homepage .homepage_first_page .writing h1 {
+  font-size: 70px;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-style: normal;
+  line-height: 1;
+  color: #282828;
+  margin-bottom: 15px;
+}
+.homepage .homepage_first_page .writing p {
+  color: #282828;
+  font-size: 17px;
+  text-transform: capitalize;
+  line-height: 20px;
+  letter-spacing: 0.025em;
+  font-weight: 400;
+  font-style: normal;
+}
+.homepage .homepage_first_page .writing .link {
+  width: 180px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #282828;
+  margin-top: 40px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.homepage .homepage_first_page .writing .link a {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #282828;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.homepage .homepage_gap_section {
+  background-color: #fff;
+  padding: 30px 0;
+}
+.homepage .homepage_gap_section .pictures {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+.homepage .homepage_gap_section .pictures .picture_item {
+  width: calc((100% - 40px) / 2);
+}
+.homepage .homepage_gap_section .pictures .picture_item img {
+  width: 100%;
+}
+.homepage .homepage_third_page {
+  min-height: 100px;
+  padding: 40px 50px 90px;
+}
+.homepage .homepage_third_page section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+.homepage .homepage_third_page section .section_third_upper h2 {
+  margin-top: 20px;
+  margin-bottom: -6px;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+.homepage .homepage_third_page section .section_third_upper p {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  font-style: italic;
+}
+.homepage .homepage_third_page section .section_third_lower {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.homepage .homepage_third_page section .section_third_lower .section_third-cart {
+  width: calc((100% - 100px) / 3);
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+}
+.homepage .homepage_third_page section .section_third_lower .section_third-cart .third_cart_upper {
+  width: 100%;
+  height: 65%;
+  overflow: hidden;
+}
+.homepage .homepage_third_page section .section_third_lower .section_third-cart .third_cart_upper img {
+  width: 100%;
+  height: 100%;
+  transition: 0.8s;
+  transform: scale(1.2);
+}
+.homepage .homepage_third_page section .section_third_lower .section_third-cart .third_cart_upper:hover img {
+  transform: scale(1);
+}
+.homepage .homepage_third_page section .section_third_lower .section_third-cart .third_cart_lower {
+  height: 35%;
+  color: #282828;
+  padding-top: 15px;
+}
+.homepage .homepage_third_page section .section_third_lower .section_third-cart .third_cart_lower h2 {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  transition: 0.4s;
+  margin-bottom: -5px;
+}
+.homepage .homepage_third_page section .section_third_lower .section_third-cart .third_cart_lower h2:hover {
+  color: #512da8;
+}
+.homepage .homepage_third_page section .section_third_lower .section_third-cart .third_cart_lower h3 {
+  font-size: 16px;
+  font-weight: 500;
+}
+.homepage .homepage_third_page section .section_third_lower .section_third-cart .third_cart_lower h3 span {
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.homepage .homepage_third_page section .section_third_lower .section_third-cart .third_cart_lower h3 span:hover {
+  color: #512da8;
+}
+.homepage .homepage_third_page section .section_third_lower .section_third-cart .third_cart_lower p {
+  font-size: 14px;
+  text-align: justify;
+  font-weight: 500;
+  line-height: 18px;
+  margin-top: 10px;
+}
+.homepage .homepage_forth_page {
+  background-image: url("/images/homepage2.webp");
+  background-size: cover;
+  background-position: 40%;
+  height: calc(100vh - 123px);
+  position: relative;
+}
+.homepage .homepage_forth_page .writing {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translate(-15%, -50%);
+}
+.homepage .homepage_forth_page .writing h1 {
+  font-size: 60px;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-style: normal;
+  line-height: 1;
+  color: #fff;
+  margin-bottom: 15px;
+}
+.homepage .homepage_forth_page .writing p {
+  color: #fff;
+  font-size: 17px;
+  text-transform: capitalize;
+  line-height: 20px;
+  letter-spacing: 0.025em;
+  font-weight: 500;
+  font-style: normal;
+}
+.homepage .homepage_forth_page .writing .link {
+  width: 180px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.homepage .homepage_forth_page .writing .link a {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #282828;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1280px) {
+  .homepage .homepage_first_page .writing {
+    width: 38%;
+  }
+  .homepage .homepage_first_page .writing h1 {
+    font-size: 66px;
+    font-weight: 700;
+    margin-bottom: 19px;
+  }
+  .homepage .homepage_first_page .writing p {
+    font-size: 16px;
+  }
+  .homepage .homepage_first_page .writing .link {
+    width: 180px;
+    height: 60px;
+    margin-top: 38px;
+  }
+  .homepage .homepage_first_page .writing .link a {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .homepage .homepage_gap_section {
+    background-color: #fff;
+    padding: 20px 0;
+  }
+  .homepage .homepage_third_page section {
+    gap: 50px;
+  }
+  .homepage .homepage_third_page section .section_third_upper h2 {
+    font-size: 26px;
+    font-weight: 700;
+  }
+  .homepage .homepage_third_page section .section_third_upper p {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .homepage .homepage_third_page section .section_third_lower {
+    gap: 30px;
+  }
+  .homepage .homepage_third_page section .section_third_lower .section_third-cart {
+    width: calc((100% - 60px) / 3);
+    height: 350px;
+  }
+  .homepage .homepage_third_page section .section_third_lower .section_third-cart .third_cart_lower h2 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: -5px;
+  }
+  .homepage .homepage_third_page section .section_third_lower .section_third-cart .third_cart_lower h3 {
+    display: none;
+  }
+  .homepage .homepage_third_page section .section_third_lower .section_third-cart .third_cart_lower p {
+    font-size: 12px;
+    text-align: justify;
+    font-weight: 400;
+    line-height: 16px;
+    margin-top: 10px;
+  }
+  .homepage .homepage_forth_page {
+    background-position: 60%;
+  }
+  .homepage .homepage_forth_page .writing {
+    width: 55%;
+  }
+  .homepage .homepage_forth_page .writing h1 {
+    font-size: 55px;
+    font-weight: 700;
+  }
+  .homepage .homepage_forth_page .writing p {
+    font-size: 16px;
+  }
+  .homepage .homepage_forth_page .writing .link {
+    width: 210px;
+    height: 70px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .homepage .homepage_first_page {
+    background-position: 70%;
+  }
+  .homepage .homepage_first_page .writing {
+    width: 38%;
+  }
+  .homepage .homepage_first_page .writing h1 {
+    font-size: 62px;
+    font-weight: 700;
+    margin-bottom: 19px;
+  }
+  .homepage .homepage_first_page .writing p {
+    font-size: 15px;
+  }
+  .homepage .homepage_first_page .writing .link {
+    width: 150px;
+    height: 50px;
+    margin-top: 30px;
+  }
+  .homepage .homepage_first_page .writing .link a {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .homepage .homepage_gap_section {
+    background-color: #fff;
+    padding: 17px 0 10px;
+  }
+  .homepage .homepage_gap_section .pictures {
+    gap: 25px;
+  }
+  .homepage .homepage_gap_section .pictures .picture_item {
+    width: calc((100% - 25px) / 2);
+  }
+  .homepage .homepage_third_page {
+    min-height: 100px;
+    padding: 10px 0 90px;
+  }
+  .homepage .homepage_third_page section {
+    gap: 40px;
+  }
+  .homepage .homepage_third_page section .section_third_upper h2 {
+    font-size: 26px;
+    font-weight: 700;
+  }
+  .homepage .homepage_third_page section .section_third_upper p {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .homepage .homepage_third_page section .section_third_lower {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .homepage .homepage_third_page section .section_third_lower .section_third-cart {
+    width: calc((100% - 30px) / 3);
+    height: 320px;
+  }
+  .homepage .homepage_third_page section .section_third_lower .section_third-cart .third_cart_lower h2 {
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.4s;
+    margin-bottom: -5px;
+  }
+  .homepage .homepage_third_page section .section_third_lower .section_third-cart .third_cart_lower h3 {
+    display: none;
+  }
+  .homepage .homepage_third_page section .section_third_lower .section_third-cart .third_cart_lower p {
+    font-size: 12px;
+    text-align: left;
+    font-weight: 400;
+    line-height: 16px;
+  }
+  .homepage .homepage_forth_page {
+    background-position: 65%;
+  }
+  .homepage .homepage_forth_page .writing h1 {
+    font-size: 50px;
+    font-weight: 700;
+  }
+  .homepage .homepage_forth_page .writing p {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .homepage .homepage_forth_page .writing .link {
+    width: 210px;
+    height: 70px;
+  }
+  .homepage .homepage_forth_page .writing .link a {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .homepage .homepage_first_page {
+    background-position: 80%;
+  }
+  .homepage .homepage_first_page .writing {
+    width: 38%;
+  }
+  .homepage .homepage_first_page .writing h1 {
+    font-size: 58px;
+    font-weight: 700;
+    margin-bottom: 19px;
+  }
+  .homepage .homepage_first_page .writing p {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .homepage .homepage_first_page .writing .link {
+    width: 140px;
+    height: 46px;
+    margin-top: 30px;
+  }
+  .homepage .homepage_first_page .writing .link a {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .homepage .homepage_gap_section {
+    background-color: #fff;
+    padding: 12px 0 5px;
+  }
+  .homepage .homepage_gap_section .pictures {
+    gap: 15px;
+  }
+  .homepage .homepage_gap_section .pictures .picture_item {
+    width: calc((100% - 15px) / 2);
+  }
+  .homepage .homepage_third_page {
+    min-height: 100px;
+    padding: 30px 0 70px;
+  }
+  .homepage .homepage_third_page section {
+    gap: 40px;
+  }
+  .homepage .homepage_third_page section .section_third_lower {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 30px;
+    gap: 30px;
+  }
+  .homepage .homepage_third_page section .section_third_lower .section_third-cart {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .homepage .homepage_third_page section .section_third_lower .section_third-cart:nth-child(2) {
+    margin-top: -40px;
+  }
+  .homepage .homepage_third_page section .section_third_lower .section_third-cart:nth-child(3) {
+    margin-top: -40px;
+  }
+  .homepage .homepage_third_page section .section_third_lower .section_third-cart .third_cart_lower {
+    height: 35%;
+    color: #282828;
+    padding-top: 15px;
+  }
+  .homepage .homepage_third_page section .section_third_lower .section_third-cart .third_cart_lower h2 {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.4s;
+    margin-bottom: -5px;
+  }
+  .homepage .homepage_third_page section .section_third_lower .section_third-cart .third_cart_lower h2:hover {
+    color: #512da8;
+  }
+  .homepage .homepage_third_page section .section_third_lower .section_third-cart .third_cart_lower h3 {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .homepage .homepage_third_page section .section_third_lower .section_third-cart .third_cart_lower h3 span {
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  .homepage .homepage_third_page section .section_third_lower .section_third-cart .third_cart_lower h3 span:hover {
+    color: #512da8;
+  }
+  .homepage .homepage_third_page section .section_third_lower .section_third-cart .third_cart_lower p {
+    font-size: 14px;
+    text-align: justify;
+    font-weight: 500;
+    line-height: 18px;
+    margin-top: 1px;
+  }
+  .homepage .homepage_forth_page {
+    background-position: 65%;
+  }
+  .homepage .homepage_forth_page .writing h1 {
+    font-size: 50px;
+    font-weight: 700;
+  }
+  .homepage .homepage_forth_page .writing p {
+    color: #fff;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .homepage .homepage_forth_page .writing .link {
+    width: 180px;
+    height: 60px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .homepage .homepage_first_page {
+    background-position: 10%;
+  }
+  .homepage .homepage_first_page .writing {
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .homepage .homepage_first_page .writing h1 {
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .homepage .homepage_first_page .writing p {
+    font-size: 16px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+  .homepage .homepage_first_page .writing .link {
+    width: 180px;
+    height: 60px;
+    margin: 0 auto;
+  }
+  .homepage .homepage_first_page .writing .link a {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .homepage .homepage_gap_section {
+    background-color: #fff;
+    padding: 15px 0 8px;
+  }
+  .homepage .homepage_gap_section .pictures {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+  }
+  .homepage .homepage_gap_section .pictures .picture_item {
+    width: 100%;
+  }
+  .homepage .homepage_gap_section .pictures .picture_item img {
+    width: 100%;
+  }
+  .homepage .homepage_third_page {
+    min-height: 100px;
+    padding: 20px 0 30px;
+  }
+  .homepage .homepage_third_page section {
+    gap: 35px;
+  }
+  .homepage .homepage_third_page section .section_third_upper h2 {
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .homepage .homepage_third_page section .section_third_upper p {
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .homepage .homepage_third_page section .section_third_lower {
+    flex-direction: column;
+    gap: 1px;
+  }
+  .homepage .homepage_third_page section .section_third_lower .section_third-cart {
+    width: 100%;
+    height: 320px;
+  }
+  .homepage .homepage_third_page section .section_third_lower .section_third-cart .third_cart_lower {
+    height: 35%;
+    padding-top: 10px;
+  }
+  .homepage .homepage_third_page section .section_third_lower .section_third-cart .third_cart_lower h2 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .homepage .homepage_third_page section .section_third_lower .section_third-cart .third_cart_lower h3 {
+    display: none;
+  }
+  .homepage .homepage_third_page section .section_third_lower .section_third-cart .third_cart_lower p {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .homepage .homepage_forth_page {
+    background-position: 30%;
+  }
+  .homepage .homepage_forth_page .writing {
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .homepage .homepage_forth_page .writing h1 {
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-left: -10px;
+  }
+  .homepage .homepage_forth_page .writing p {
+    font-size: 16px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+  .homepage .homepage_forth_page .writing .link {
+    width: 180px;
+    height: 60px;
+    margin: 0 auto;
+  }
+  .homepage .homepage_forth_page .writing .link a {
+    font-size: 18px;
+    font-weight: 600;
+  }
+}

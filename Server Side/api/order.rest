@@ -1,0 +1,61 @@
+@base_url = http://localhost:2030/api/v1
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MWVjMWUyZDExNDYyMzVmOWQzM2ExNSIsImlhdCI6MTcxMzU1MzM5MiwiZXhwIjoxNzEzODEyNTkyfQ.jVexhpgGP-VqsRXNEgdUtS7ZiljWPOOWOEcsGVs_8Ao
+
+
+### Create New Order
+POST {{base_url}}/orders?coupon=ramadan
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "orderItems": [
+        {
+            "_id": "6620eadf10c26bd96eaf2bae",
+            "name": "Hats",
+            "totalQty": 3,
+            "price": 250,
+            "description": "Best thing ever"
+        },
+        {
+            "_id": "662159b40650bf4daebc1aac",
+            "name": "Shoes",
+            "totalQty": 5,
+            "price": 75,
+            "description": "Best thing ever"
+        }
+    ],
+    "shippingAddress": {
+        "firstname": "Fuad",
+        "postalAddress": "Azerbaijan/Baku"
+    },
+    "totalPrice": 500
+}
+
+
+
+### Read All Orders
+GET {{base_url}}/orders
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+
+### Read Single Order
+GET {{base_url}}/orders/662235dc551b09a7c3256125
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+
+
+### Read Sales Sum of Orders
+GET {{base_url}}/orders/sales/summary
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+### Update Order
+PUT {{base_url}}/orders/662235dc551b09a7c3256125
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "status": "delivered"
+}

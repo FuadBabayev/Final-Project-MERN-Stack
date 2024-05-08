@@ -1,0 +1,172 @@
+.addressDetails {
+  display: flex;
+  align-items: center;
+  height: 450px;
+  background-color: #fff;
+}
+.addressDetails .addressDetails_partA {
+  width: 50%;
+  height: 100%;
+}
+.addressDetails .addressDetails_partA img {
+  width: 100%;
+  height: 100%;
+}
+.addressDetails .addressDetails_partB {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.addressDetails .addressDetails_partB .heading {
+  padding-bottom: 30px;
+}
+.addressDetails .addressDetails_partB .heading h2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+.addressDetails .addressDetails_partB .shipping_table {
+  width: 70%;
+}
+.addressDetails .addressDetails_partB .shipping_table ul {
+  list-style: none;
+}
+.addressDetails .addressDetails_partB .shipping_table ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: -5px;
+}
+.addressDetails .addressDetails_partB .shipping_table ul li h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+.addressDetails .addressDetails_partB .shipping_table ul li p {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 500;
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1280px) {
+  .addressDetails .addressDetails_partB .heading {
+    padding-bottom: 25px;
+  }
+  .addressDetails .addressDetails_partB .heading h2 {
+    font-size: 25px;
+  }
+  .addressDetails .addressDetails_partB .shipping_table {
+    width: 80%;
+  }
+  .addressDetails .addressDetails_partB .shipping_table ul li h3 {
+    font-size: 21px;
+    font-weight: 700;
+  }
+  .addressDetails .addressDetails_partB .shipping_table ul li p {
+    font-size: 17px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .addressDetails .addressDetails_partB .heading {
+    padding-bottom: 20px;
+  }
+  .addressDetails .addressDetails_partB .heading h2 {
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .addressDetails .addressDetails_partB .shipping_table {
+    width: 85%;
+  }
+  .addressDetails .addressDetails_partB .shipping_table ul li h3 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .addressDetails .addressDetails_partB .shipping_table ul li p {
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .addressDetails {
+    position: relative;
+  }
+  .addressDetails .addressDetails_partA {
+    width: 100%;
+    height: 100%;
+  }
+  .addressDetails .addressDetails_partA img {
+    width: 100%;
+    height: 100%;
+  }
+  .addressDetails .addressDetails_partB {
+    position: absolute;
+    background-color: rgba(40, 40, 40, 0.7);
+    width: 100%;
+  }
+  .addressDetails .addressDetails_partB .heading {
+    padding-bottom: 30px;
+  }
+  .addressDetails .addressDetails_partB .heading h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+  }
+  .addressDetails .addressDetails_partB .shipping_table {
+    width: 75%;
+  }
+  .addressDetails .addressDetails_partB .shipping_table ul li {
+    margin-bottom: -5px;
+  }
+  .addressDetails .addressDetails_partB .shipping_table ul li h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+  }
+  .addressDetails .addressDetails_partB .shipping_table ul li p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .addressDetails {
+    position: relative;
+  }
+  .addressDetails .addressDetails_partA {
+    width: 100%;
+    height: 100%;
+  }
+  .addressDetails .addressDetails_partA img {
+    width: 100%;
+    height: 100%;
+  }
+  .addressDetails .addressDetails_partB {
+    position: absolute;
+    background-color: rgba(40, 40, 40, 0.7);
+    width: 100%;
+  }
+  .addressDetails .addressDetails_partB .heading {
+    padding-bottom: 30px;
+  }
+  .addressDetails .addressDetails_partB .heading h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+  }
+  .addressDetails .addressDetails_partB .shipping_table {
+    width: 80%;
+  }
+  .addressDetails .addressDetails_partB .shipping_table ul li {
+    margin-bottom: -5px;
+  }
+  .addressDetails .addressDetails_partB .shipping_table ul li h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+  }
+  .addressDetails .addressDetails_partB .shipping_table ul li p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+  }
+}
