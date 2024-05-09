@@ -39,4 +39,4 @@ This application utilizes the following main dependencies:
 - **react-loading:** A library providing customizable loading animations for React projects.
 - **react-toastify:** A library for creating notification messages, informing users about various states.
 - **swiper:** A carousel library with touch gestures and scrolling features.
-- **Sass:** A CSS preprocessor adding features to CSS, promoting more organized and flexibl CSS writing.
+- **Sass:** A CSS preprocessor adding features to CSS, promoting more organized and flexible CSS writing.
